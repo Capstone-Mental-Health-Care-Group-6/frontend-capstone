@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import PageContoh from "./pages/PageContoh"
+import PageContoh from "./pages/PageContoh/PageContoh"
 
 function App() {
 
