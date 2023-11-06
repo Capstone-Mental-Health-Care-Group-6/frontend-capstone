@@ -1,2 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
+
+/* navbar */
+
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid #636363;
+    width: 90%;
+}
+
+nav .d-flex hr {
+    border: none;
+    border-left: 2px solid black;
+    height: 30px;
+    width: 1px;
+}
+
+nav .d-flex span {
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+nav .d-flex hr {
+    border: 1px solid #636363;
+    opacity: 100%;
+}
+
+nav .container-fluid .navbar-collapse .navbar-nav li a {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav .container-fluid .navbar-collapse .navbar-nav li a:hover {
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a:hover {
+    font-weight: 600;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0085FF;
+    transition: width .3s;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+}
+
+nav .navbar-collapse button {
+    border: 1px solid #0085FF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0085FF;
+}
