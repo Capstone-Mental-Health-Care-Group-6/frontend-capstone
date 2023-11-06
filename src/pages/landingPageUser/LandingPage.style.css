@@ -1,0 +1,109 @@
+#home {
+    padding: 90px 90px 0px 90px;
+    background-image: url('/src/assets/Bg-Hero-Section.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.home .row {
+    min-height: 93vh;
+}
+
+.home .row h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #004280;
+}
+
+.home .row p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #001B33;
+}
+
+.home .row button {
+    background-color: #0085FF;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:1212px) {
+    .home .row button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1148px) {
+    .home .row h1 {
+        font-size: 36px;
+    }
+
+    .home .row p {
+        font-size: 16px;
+    }
+
+    .home .row .col img {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    #home {
+        padding: 90px 50px 0px 50px;
+    }
+
+    .home .row .col img {
+        width: 360px;
+    }
+
+    .home .row button {
+        width: 100%;
+        font-size: 10px;
+
+    }
+
+    .home .row h1 {
+        font-size: 30px;
+    }
+
+    .home .row p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:818px) {
+    .home .row .col img {
+        width: 350px;
+    }
+
+    .home .row h1 {
+        font-size: 30px;
+    }
+
+    .home .row p {
+        font-size: 9px;
+    }
+
+
+}
+
+@media screen and (max-width:708px) {
+    .home .row .col img {
+        width: 300px;
+    }
+
+    .home .row h1 {
+        font-size: 23px;
+    }
+
+    .home .row p {
+        font-size: 8px;
+    }
+}
