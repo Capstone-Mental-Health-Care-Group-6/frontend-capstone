@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
-import PageContoh from "./pages/PageContoh/PageContoh"
+import LandingPage from "./pages/landingPage/LandingPage"
 
 function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<PageContoh />} />
+      <Route path='/' element={<LandingPage />} />
     </Routes>
   )
 }
