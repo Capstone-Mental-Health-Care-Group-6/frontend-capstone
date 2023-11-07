@@ -2,7 +2,8 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { chat, daftarSekarang, mentalHealthAmico, phone, vidioCall } from '../../../image'
+import { book, businesCentre, chat, daftarSekarang, flame, group, houseFill, iconMask, love, mentalHealthAmico, pending, periority, person, phone, repeat, vidioCall } from '../../../image'
+import ButtonConselor from '../../components/Elements/ButtonConselor'
 
 
 function LandingPage() {
@@ -43,7 +44,7 @@ function LandingPage() {
                     <h1>Ruang Aman & Nyaman untuk Ceritakan Masalahmu</h1>
                     <p>Beragam pilihan ruang aman sesuai kenyamanan dan kebutuhanmu : </p>
                 </div>
-                <div className="row d-flex justify-content-between justify-content-lg-evenly">
+                <div className="row d-flex justify-content-between justify-content-lg-evenly mb-5 ">
                     <div className="col col-md-3 col-12">
                         <ServiceContent title={'CHAT'} img={chat} text={<p>Sesi konseling melalui <span>Metode Chat</span> dengan Psikolog</p>} />
                     </div>
@@ -54,6 +55,27 @@ function LandingPage() {
                         <ServiceContent title={'VIDIO CALL'} img={vidioCall} text={<p>Sesi konseling melalui <span>Metode vidio Call</span> dengan Psikolog</p>} />
                     </div>
                 </div>
+            </div>
+
+            <div className="conselors" id='conselors'>
+                <div className="conselors-content ">
+                    <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
+                    <p>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
+                    <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 g-3">
+                        <ButtonConselor img={flame} text={'Kendali Emosi'} />
+                        <ButtonConselor img={person} text={'Kesepian'} />
+                        <ButtonConselor img={periority} text={'Kecemasan '} />
+                        <ButtonConselor img={businesCentre} text={'Pekerjaan'} />
+                        <ButtonConselor img={book} text={'Pendidikan'} />
+                        <ButtonConselor img={houseFill} text={'Keluarga'} />
+                        <ButtonConselor img={love} text={'Percintaan'} />
+                        <ButtonConselor img={person} text={'Social'} />
+                        <ButtonConselor img={repeat} text={'Kecanduan'} />
+                        <ButtonConselor img={pending} text={'Lainnya'} />
+                    </div>
+                </div>
+
+
             </div>
         </AuthLayout>
     )
