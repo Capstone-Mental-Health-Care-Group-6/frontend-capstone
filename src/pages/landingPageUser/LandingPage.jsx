@@ -42,63 +42,67 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="services " id='services'>
-                <div className='text-center' >
-                    <h1>Ruang Aman & Nyaman untuk Ceritakan Masalahmu</h1>
-                    <p>Beragam pilihan ruang aman sesuai kenyamanan dan kebutuhanmu : </p>
-                </div>
-                <div className="row d-flex justify-content-between justify-content-lg-evenly mb-5 ">
-                    <div className="col col-md-3 col-12">
-                        <ServiceContent title={'CHAT'} img={chat} text={<p>Sesi konseling melalui <span>Metode Chat</span> dengan Psikolog</p>} />
-                    </div>
-                    <div className="col col-md-3 col-12">
-                        <ServiceContent title={'CALL'} img={phone} text={<p>Sesi konseling melalui <span>Metode Call</span> dengan Psikolog</p>} />
-                    </div>
-                    <div className="col col-md-3 col-12">
-                        <ServiceContent title={'VIDIO CALL'} img={vidioCall} text={<p>Sesi konseling melalui <span>Metode vidio Call</span> dengan Psikolog</p>} />
-                    </div>
-                </div>
-            </div>
 
-            <div className="conselors" id='conselors'>
-                <div className="conselors-content ">
-                    <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
-                    <p>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
-                    <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 g-3">
-                        <ButtonConselor img={flame} text={'Kendali Emosi'} />
-                        <ButtonConselor img={person} text={'Kesepian'} />
-                        <ButtonConselor img={periority} text={'Kecemasan '} />
-                        <ButtonConselor img={businesCentre} text={'Pekerjaan'} />
-                        <ButtonConselor img={book} text={'Pendidikan'} />
-                        <ButtonConselor img={houseFill} text={'Keluarga'} />
-                        <ButtonConselor img={love} text={'Percintaan'} />
-                        <ButtonConselor img={person} text={'Social'} />
-                        <ButtonConselor img={repeat} text={'Kecanduan'} />
-                        <ButtonConselor img={pending} text={'Lainnya'} />
+            <div className="service-and-conselor">
+
+                <div className="services " id='services'>
+                    <div className='text-center' >
+                        <h1>Ruang Aman & Nyaman untuk Ceritakan Masalahmu</h1>
+                        <p>Beragam pilihan ruang aman sesuai kenyamanan dan kebutuhanmu : </p>
                     </div>
-
-
-                    <div className="caraosel-conselor mt-5">
-                        <Splide options={{
-                            arrows: true,
-                            autoWidth: true,
-                            autoplay: true,
-                            perPage: 3,
-                            pagination: false,
-                            focus: 'center',
-                            gap: 40,
-                            autoplay: true,
-                            type: 'loop',
-                        }}>
-                            <SplideList name={'Charlie Philips, M.Psi.'} specialist={'Psikolog Klinis | Spesialis Keluarga'} img={doctor1} />
-                            <SplideList name={'Miracle Culhane, S.Psi.'} specialist={'Konselor | Spesialis Hubungan Interpersonal'} img={doctor2} />
-                            <SplideList name={'Maria Mango, S. Psi.'} specialist={'Psikolog | Spesialis Menejemen Stress dan Emosi'} img={doctor3} />
-
-                        </Splide>
+                    <div className="row d-flex justify-content-between justify-content-lg-evenly mb-5 ">
+                        <div className="col col-md-3 col-12">
+                            <ServiceContent title={'CHAT'} img={chat} text={<p>Sesi konseling melalui <span>Metode Chat</span> dengan Psikolog</p>} />
+                        </div>
+                        <div className="col col-md-3 col-12">
+                            <ServiceContent title={'CALL'} img={phone} text={<p>Sesi konseling melalui <span>Metode Call</span> dengan Psikolog</p>} />
+                        </div>
+                        <div className="col col-md-3 col-12">
+                            <ServiceContent title={'VIDIO CALL'} img={vidioCall} text={<p>Sesi konseling melalui <span>Metode vidio Call</span> dengan Psikolog</p>} />
+                        </div>
                     </div>
                 </div>
 
+                <div className="conselors" id='conselors'>
+                    <div className="conselors-content ">
+                        <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
+                        <p>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
+                        <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 g-3">
+                            <ButtonConselor img={flame} text={'Kendali Emosi'} />
+                            <ButtonConselor img={person} text={'Kesepian'} />
+                            <ButtonConselor img={periority} text={'Kecemasan '} />
+                            <ButtonConselor img={businesCentre} text={'Pekerjaan'} />
+                            <ButtonConselor img={book} text={'Pendidikan'} />
+                            <ButtonConselor img={houseFill} text={'Keluarga'} />
+                            <ButtonConselor img={love} text={'Percintaan'} />
+                            <ButtonConselor img={person} text={'Social'} />
+                            <ButtonConselor img={repeat} text={'Kecanduan'} />
+                            <ButtonConselor img={pending} text={'Lainnya'} />
+                        </div>
 
+
+                        <div className="caraosel-conselor mt-5">
+                            <Splide options={{
+                                arrows: true,
+                                autoWidth: true,
+                                autoplay: true,
+                                perPage: 3,
+                                pagination: false,
+                                focus: 'center',
+                                gap: 40,
+                                autoplay: true,
+                                type: 'loop',
+                            }}>
+                                <SplideList name={'Charlie Philips, M.Psi.'} specialist={'Psikolog Klinis | Spesialis Keluarga'} img={doctor1} />
+                                <SplideList name={'Miracle Culhane, S.Psi.'} specialist={'Konselor | Spesialis Hubungan Interpersonal'} img={doctor2} />
+                                <SplideList name={'Maria Mango, S. Psi.'} specialist={'Psikolog | Spesialis Menejemen Stress dan Emosi'} img={doctor3} />
+
+                            </Splide>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </AuthLayout>
     )
