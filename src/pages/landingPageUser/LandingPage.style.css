@@ -80,7 +80,10 @@
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     min-height: 50vh;
-
+    background-image: url(/src/assets/Rectangle-Rounded-bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .services .text-center h1 {
@@ -167,11 +170,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.service-and-conselor {
-    background-image: url(/src/assets/Rectangle-Rounded-bg.svg);
-    background-position: center;
-    background-size: cover;
-}
+
 
 /* conselors end*/
 

@@ -1,7 +1,6 @@
 import logoEmpathiCare from "./src/assets/Logo-EmpathiCare.svg"
 import logoKemenkes from "./src/assets/Logo-Kemenkes.svg"
 import mentalHealthAmico from './src/assets/Mental-health-amico.svg'
-import daftarSekarang from './src/assets/daftar-sekarang.png'
 import chat from './src/assets/Chat.svg'
 import vector from './src/assets/Vector.svg'
 import phone from './src/assets/phone.svg'
@@ -21,9 +20,10 @@ import book from './src/assets/text.book.closed.fill.svg'
 import doctor1 from './src/assets/doctor1.svg'
 import doctor2 from './src/assets/doctor2.svg'
 import doctor3 from './src/assets/doctor3.svg'
+import youngHappy from './src/assets/young-happy.svg'
 
 
 export {
-    logoEmpathiCare, logoKemenkes, mentalHealthAmico, daftarSekarang, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
-    , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3
+    logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
+    , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy
 }
