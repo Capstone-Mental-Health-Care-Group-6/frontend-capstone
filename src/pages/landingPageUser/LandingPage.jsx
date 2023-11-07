@@ -2,8 +2,11 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { book, businesCentre, chat, daftarSekarang, flame, group, houseFill, iconMask, love, mentalHealthAmico, pending, periority, person, phone, repeat, vidioCall } from '../../../image'
+import { book, businesCentre, chat, daftarSekarang, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, repeat, vidioCall } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import '@splidejs/react-splide/css';
+import SplideList from '../../components/Fragment/SplideList'
 
 
 function LandingPage() {
@@ -72,6 +75,26 @@ function LandingPage() {
                         <ButtonConselor img={person} text={'Social'} />
                         <ButtonConselor img={repeat} text={'Kecanduan'} />
                         <ButtonConselor img={pending} text={'Lainnya'} />
+                    </div>
+
+
+                    <div className="caraosel-conselor mt-5">
+                        <Splide options={{
+                            arrows: true,
+                            autoWidth: true,
+                            autoplay: true,
+                            perPage: 3,
+                            pagination: false,
+                            focus: 'center',
+                            gap: 40,
+                            autoplay: true,
+                            type: 'loop',
+                        }}>
+                            <SplideList name={'Charlie Philips, M.Psi.'} specialist={'Psikolog Klinis | Spesialis Keluarga'} img={doctor1} />
+                            <SplideList name={'Miracle Culhane, S.Psi.'} specialist={'Konselor | Spesialis Hubungan Interpersonal'} img={doctor2} />
+                            <SplideList name={'Maria Mango, S. Psi.'} specialist={'Psikolog | Spesialis Menejemen Stress dan Emosi'} img={doctor3} />
+
+                        </Splide>
                     </div>
                 </div>
 

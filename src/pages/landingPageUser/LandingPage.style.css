@@ -139,7 +139,7 @@
     font-weight: 700;
 }
 
-.conselors .conselors-content button {
+.conselors .conselors-content .btn {
     border: 2px solid #CACACA;
     border-radius: 20px;
     padding: 5px 20px;
@@ -149,6 +149,19 @@
 .conselors .conselors-content button img {
     width: 20px;
     height: 20px;
+}
+
+.conselors .conselors-content .caraosel-conselor img {
+    border-radius: 20px 20px 0px 0px;
+    width: 400px;
+}
+
+.conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 460px;
+    width: 400px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* conselors end*/
@@ -187,7 +200,7 @@
 
 }
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
 
     nav .container-fluid .d-flex,
     hr,
@@ -198,4 +211,4 @@
     nav .container-fluid .d-flex span {
         display: none;
     }
-}
+} */
