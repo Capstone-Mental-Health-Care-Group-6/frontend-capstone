@@ -32,6 +32,38 @@
     border-radius: 20px;
 }
 
+#daftar-sekarang {
+    padding: 90px 90px 0px 90px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/src/assets/Circle-bg.svg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.daftar-sekarang .row .col img {
+    width: 500px;
+}
+
+.daftar-sekarang .row .col .text-daftar h1 {
+    color: #55AEFF;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.daftar-sekarang .row .col .text-daftar p {
+    font-size: 18px;
+}
+
+.daftar-sekarang .row .col .text-daftar span {
+    font-weight: 600;
+}
+
+.daftar-sekarang .row .col button {
+    background-color: #0085FF;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
 
 @media screen and (max-width:1212px) {
     .home .row button {
