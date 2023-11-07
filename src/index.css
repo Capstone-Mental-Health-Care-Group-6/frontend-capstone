@@ -64,3 +64,16 @@ nav .navbar-collapse button {
     font-size: 16px;
     color: #0085FF;
 }
+
+.navbarbgActive {
+    background: rgba(211, 202, 202, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    width: 100%;
+    border: none;
+}
