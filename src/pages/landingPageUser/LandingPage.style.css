@@ -1,3 +1,4 @@
+/* home */
 #home {
     padding: 90px 90px 0px 90px;
     background-image: url('/src/assets/Bg-Hero-Section.svg');
@@ -32,6 +33,11 @@
     border-radius: 20px;
 }
 
+/* home end */
+
+
+/* daftar sekarang */
+
 #daftar-sekarang {
     padding: 90px 90px 0px 90px;
     font-family: 'Montserrat', sans-serif;
@@ -65,6 +71,55 @@
     border-radius: 20px;
 }
 
+/* daftar sekarang end */
+
+/* services */
+#services {
+    margin-top: 100px;
+    padding: 90px 90px 0px 90px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/src/assets/Rectangle-Rounded-bg.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.services .text-center h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #55AEFF;
+}
+
+.services .text-center p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services .row {
+    margin-top: 50px;
+}
+
+.services .service-content img {
+    padding: 30px;
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/assets/Vector.svg);
+}
+
+.services .service-content .text-center h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.services .service-content .text-center span {
+    font-weight: 700;
+}
+
+/* services end */
+
 @media screen and (max-width:1212px) {
     .home .row button {
         width: 100%;
@@ -95,9 +150,13 @@
 
 @media screen and (max-width:600px) {
 
-    nav .container-fluid .d-flex .kemenkes,
+    nav .container-fluid .d-flex,
     hr,
-    span {
+    .kemenkes {
+        display: none;
+    }
+
+    nav .container-fluid .d-flex span {
         display: none;
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
-import { daftarSekarang, mentalHealthAmico } from '../../../image'
+import ServiceContent from '../../components/Fragment/ServiceContent'
+import { chat, daftarSekarang, mentalHealthAmico, phone, vidioCall } from '../../../image'
 
 
 function LandingPage() {
@@ -33,6 +34,24 @@ function LandingPage() {
                             <p>Daftar <span>Gratis</span>  untuk solusi segala masalahmu. Jadikan kami #TemanMelangkah di perjalanan kesehatan mentalmu!</p>
                             <button className='btn' >Daftar Sekarang</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="services " id='services'>
+                <div className='text-center' >
+                    <h1>Ruang Aman & Nyaman untuk Ceritakan Masalahmu</h1>
+                    <p>Beragam pilihan ruang aman sesuai kenyamanan dan kebutuhanmu : </p>
+                </div>
+                <div className="row d-flex justify-content-between justify-content-lg-evenly">
+                    <div className="col col-md-3 col-12">
+                        <ServiceContent title={'CHAT'} img={chat} text={<p>Sesi konseling melalui <span>Metode Chat</span> dengan Psikolog</p>} />
+                    </div>
+                    <div className="col col-md-3 col-12">
+                        <ServiceContent title={'CALL'} img={phone} text={<p>Sesi konseling melalui <span>Metode Call</span> dengan Psikolog</p>} />
+                    </div>
+                    <div className="col col-md-3 col-12">
+                        <ServiceContent title={'VIDIO CALL'} img={vidioCall} text={<p>Sesi konseling melalui <span>Metode vidio Call</span> dengan Psikolog</p>} />
                     </div>
                 </div>
             </div>
