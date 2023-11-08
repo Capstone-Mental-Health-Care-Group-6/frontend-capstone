@@ -239,6 +239,11 @@
         height: 390px;
         width: 290px;
     }
+
+    .testimonies .row .col .respons-client h1 {
+        font-size: 32px
+    }
+
 }
 
 @media screen and (max-width:1328px) {
@@ -292,6 +297,9 @@
     .caraosel-conselor .card-caraosel .text-center span {
         font-size: 11px;
     }
+
+
+
 }
 
 @media screen and (max-width:992px) {
