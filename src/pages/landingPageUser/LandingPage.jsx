@@ -2,7 +2,7 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { book, businesCentre, chat, daftarSekarang, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, repeat, vidioCall, youngHappy } from '../../../image'
+import { book, businesCentre, chat, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, repeat, vidioCall, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
@@ -67,7 +67,7 @@ function LandingPage() {
                 <div className="conselors-content ">
                     <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
                     <p>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
-                    <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 g-3">
+                    <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 d-n g-3 ">
                         <ButtonConselor img={flame} text={'Kendali Emosi'} />
                         <ButtonConselor img={person} text={'Kesepian'} />
                         <ButtonConselor img={periority} text={'Kecemasan '} />
@@ -89,9 +89,26 @@ function LandingPage() {
                             perPage: 3,
                             pagination: false,
                             focus: 'center',
-                            gap: 40,
+                            gap: 50,
                             autoplay: true,
                             type: 'loop',
+                            breakpoints: {
+                                1450: {
+                                    gap: 0,
+                                    focus: false
+                                },
+                                894: {
+                                    arrows: false
+                                },
+                                692: {
+                                    gap: 0,
+                                },
+                                640: {
+                                    perPage: 2,
+                                    // focus: false,
+                                    // pagination: true
+                                }
+                            }
                         }}>
                             <SplideList name={'Charlie Philips, M.Psi.'} specialist={'Psikolog Klinis | Spesialis Keluarga'} img={doctor1} />
                             <SplideList name={'Miracle Culhane, S.Psi.'} specialist={'Konselor | Spesialis Hubungan Interpersonal'} img={doctor2} />
