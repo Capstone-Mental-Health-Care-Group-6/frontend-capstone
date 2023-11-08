@@ -8,6 +8,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid #636363;
     width: 90%;
+    z-index: 99;
 }
 
 nav .d-flex hr {

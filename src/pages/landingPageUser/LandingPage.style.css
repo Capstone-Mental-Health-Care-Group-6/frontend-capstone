@@ -129,7 +129,6 @@
     margin-bottom: 100px;
     background-image: url(/src/assets/service-bg2.svg);
     background-position: bottom left;
-
     background-size: 20% 40%;
     background-repeat: no-repeat;
 
@@ -150,6 +149,14 @@
     border-radius: 20px;
     padding: 5px 20px;
     font-size: 12px;
+}
+
+.conselors .conselors-content .caraosel-conselor button {
+    background-color: #0085FF;
+}
+
+.conselors .conselors-content .caraosel-conselor .splide__arrow svg {
+    fill: #FFFFFF;
 }
 
 .conselors .conselors-content button img {
@@ -173,6 +180,45 @@
 
 
 /* conselors end*/
+
+
+/* testimoni */
+#testimonies {
+    min-height: 40vh;
+    background-color: #0059AA;
+    padding: 50px 200px 50px 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimonies .row .col .profile {
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.testimonies .row .col .profile p {
+    font-weight: 700;
+}
+
+
+.testimonies .row .col .respons-client h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.testimonies .row .col .respons-client p {
+    margin-top: 5px;
+    color: #FFFFFF;
+}
+
+.testimonies .row .col .button-testimoni button {
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFFFFF !important;
+}
+
+/* testimoni end*/
 
 @media screen and (max-width:1860px) {
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
@@ -214,6 +260,10 @@
 @media screen and (max-width:1212px) {
     .home .row button {
         width: 100%;
+    }
+
+    #testimonies {
+        padding: 50px 100px 50px 100px;
     }
 }
 
@@ -267,6 +317,31 @@
     .caraosel-conselor .card-caraosel .text-center span {
         font-size: 10px;
 
+    }
+
+    .testimonies .row .col .respons-client h1 {
+        font-size: 25px
+    }
+
+    .testimonies .row .col .respons-client p {
+        font-size: 13px;
+    }
+
+    .testimonies .row .col .button-testimoni button {
+        font-size: 13px;
+        font-weight: 400;
+        color: #FFFFFF !important;
+    }
+
+    .testimonies .row .col .profile {
+        background-color: transparent;
+
+    }
+
+    .testimonies .row .col:nth-child(1) {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-bottom: 20px;
     }
 
 }

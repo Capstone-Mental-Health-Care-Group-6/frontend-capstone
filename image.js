@@ -21,9 +21,13 @@ import doctor1 from './src/assets/doctor1.svg'
 import doctor2 from './src/assets/doctor2.svg'
 import doctor3 from './src/assets/doctor3.svg'
 import youngHappy from './src/assets/young-happy.svg'
+import star from './src/assets/star1.svg'
+import client1 from './src/assets/client1.svg'
+import quote from './src/assets/Quote.svg'
+import arrowRight from './src/assets/Arrow-Right.svg'
 
 
 export {
     logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
-    , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy
+    , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy, star, client1, quote, arrowRight
 }

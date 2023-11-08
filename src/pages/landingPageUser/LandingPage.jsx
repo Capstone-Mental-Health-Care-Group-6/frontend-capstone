@@ -2,7 +2,7 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { book, businesCentre, chat, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, repeat, vidioCall, youngHappy } from '../../../image'
+import { arrowRight, book, businesCentre, chat, client1, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, quote, repeat, star, vidioCall, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
@@ -16,7 +16,7 @@ function LandingPage() {
                 <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
                     <div className="col d-grid ">
                         <h1>Apakah Anda <br />
-                            Merasa Stres?
+                            <span className='typing-animation' >Merasa Stres?</span>
                         </h1>
                         <p>Temukan solusi terbaik untuk masalah kesehatan mental Anda. Capai kesejahteraan dan kebahagiaan yang Anda inginkan bersama kami.</p>
                         <button className='btn mt-3' >Mulai Perjalanan Kesehatan Mental Anda</button>
@@ -28,7 +28,7 @@ function LandingPage() {
             </div>
 
             <div className="daftar-sekarang" id='daftar-sekarang'>
-                <div className="row">
+                <div className="row ">
                     <div className="col d-grid justify-content-center">
                         <img src={youngHappy} alt="" />
                     </div>
@@ -66,7 +66,7 @@ function LandingPage() {
             <div className="conselors" id='conselors'>
                 <div className="conselors-content ">
                     <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
-                    <p>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
+                    <p className='text-center'>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
                     <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 d-n g-3 ">
                         <ButtonConselor img={flame} text={'Kendali Emosi'} />
                         <ButtonConselor img={person} text={'Kesepian'} />
@@ -117,11 +117,42 @@ function LandingPage() {
                         </Splide>
                     </div>
                 </div>
+            </div>
 
+            <div className="testimonies" id='testimonies'>
+                <div className="row justify-content-center row-cols-lg-2 row-cols-1">
+                    <div className="col col-lg-4 d-grid justify-content-center">
+                        <div className="profile">
+                            <img src={client1} alt="" />
+                            <p className='text-center mt-2' >K.A, 25 Tahun</p>
+                            <div className="d-flex justify-content-center gap-1">
+                                <img src={star} alt="" />
+                                <img src={star} alt="" />
+                                <img src={star} alt="" />
+                                <img src={star} alt="" />
+                                <img src={star} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className=" col col-lg-8  d-grid justify-content-center align-items-center">
+                        <div className="respons-client">
+                            <h1>Yang Client Kami Katakan Tentang Kami</h1>
+                            <img src={quote} alt="" />
+                            <p>Beyond my expectationn!! Semua masalah dibuat jadi lebih ringan, dibawakan dengan cara komedi dan tidak terlalu formal jadi enjoy
+                                to talk. Setelah bbrp kali Konsul psikolog baru kali ini yang suantai sekali, bener² kayak
+                                ngobrol sama temen dan kayak udah akrab
+                                lamaaa. God Bless you Kak Cahrlie!! deserve much love!</p>
+                        </div>
+                        <div className="button-testimoni w-100">
+                            <button className='btn float-end' >Selanjutnya <img src={arrowRight} alt="" /></button>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
-        </AuthLayout>
+        </AuthLayout >
     )
 }
 
