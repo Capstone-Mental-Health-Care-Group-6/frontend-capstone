@@ -79,10 +79,10 @@
     padding: 90px 90px 0px 90px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
-    min-height: 50vh;
-    background-image: url(/src/assets/Rectangle-Rounded-bg.svg);
+    min-height: 70vh;
+    background-image: url(/src/assets/services-bg1.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100% 70vh;
     background-repeat: no-repeat;
 }
 
