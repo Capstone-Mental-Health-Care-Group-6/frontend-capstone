@@ -2,9 +2,10 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { arrowRight, book, businesCentre, chat, client1, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, quote, repeat, star, vidioCall, youngHappy } from '../../../image'
+import { arrowRight, book, businesCentre, chat, client1, doctor1, doctor2, doctor3, fakeimageregister, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, quote, repeat, star, vidioCall, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { services } from '../../components/dummyData'
+import { Splide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import SplideList from '../../components/Fragment/SplideList'
 
@@ -51,15 +52,12 @@ function LandingPage() {
                     <p>Beragam pilihan ruang aman sesuai kenyamanan dan kebutuhanmu : </p>
                 </div>
                 <div className="row d-flex justify-content-between justify-content-lg-evenly mb-5 ">
-                    <div className="col col-md-3 col-12">
-                        <ServiceContent title={'CHAT'} img={chat} text={<p>Sesi konseling melalui <span>Metode Chat</span> dengan Psikolog</p>} />
-                    </div>
-                    <div className="col col-md-3 col-12">
-                        <ServiceContent title={'CALL'} img={phone} text={<p>Sesi konseling melalui <span>Metode Call</span> dengan Psikolog</p>} />
-                    </div>
-                    <div className="col col-md-3 col-12">
-                        <ServiceContent title={'VIDIO CALL'} img={vidioCall} text={<p>Sesi konseling melalui <span>Metode vidio Call</span> dengan Psikolog</p>} />
-                    </div>
+                    {services.map((service, index) => (
+                        <div className="col col-md-3 col-12" key={index}>
+                            <ServiceContent title={service.title} img={service.Image} text={service.text} metode={service.metode} />
+                        </div>
+                    ))}
+
                 </div>
             </div>
 
@@ -85,7 +83,6 @@ function LandingPage() {
                         <Splide options={{
                             arrows: true,
                             autoWidth: true,
-                            autoplay: true,
                             perPage: 3,
                             pagination: false,
                             focus: 'center',
@@ -105,8 +102,6 @@ function LandingPage() {
                                 },
                                 640: {
                                     perPage: 2,
-                                    // focus: false,
-                                    // pagination: true
                                 }
                             }
                         }}>
@@ -150,6 +145,82 @@ function LandingPage() {
                     </div>
                 </div>
 
+            </div>
+
+            <div className="register" id='register'>
+                <div className="text-center">
+                    <h1>Capai Bahagiamu Sekarang</h1>
+                    <h5>Seperti yang lain, Kamu juga Berhak Bahagia</h5>
+                </div>
+                <div className="row mt-5">
+                    <div className="col">
+                        <img src={fakeimageregister} alt="" />
+                    </div>
+                    <div className="col">
+                        <form>
+                            <div className="mb-3">
+                                <label htmlFor="name" className="form-label">
+                                    Nama
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="name"
+                                    name='name'
+                                />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="noPhone" className="form-label">
+                                    No. Telepon
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="noPhone"
+                                    name='noPhone'
+                                />
+                            </div>
+                            <div className="row">
+                                <div className="col">
+                                    <div className="mb-3">
+                                        <label htmlFor="datepicker" className="form-label">
+                                            Date
+                                        </label>
+                                        <input
+                                            type="date"
+                                            className="form-control datepicker"
+                                            id="datepicker"
+                                            name='datepicker'
+                                        />
+                                    </div >
+                                </div>
+                                <div className="col">
+                                    <label className="form-label">
+                                        Conselor
+                                    </label>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label htmlFor="">
+                                    Message
+                                </label>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <button type="submit" className="btn btn-primary w-100">
+                                Buat Janji Temu
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </AuthLayout >

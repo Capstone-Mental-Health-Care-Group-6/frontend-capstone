@@ -220,6 +220,33 @@
 
 /* testimoni end*/
 
+/* register */
+#register {
+    padding: 6px 90px 0px 90px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 90px;
+}
+
+.register .text-center h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0085FF;
+}
+
+.register .text-center p {
+    font-size: 18px;
+}
+
+.register .row .col form button {
+    border-radius: 20px;
+}
+
+.register .row .col form label {
+    font-weight: 600;
+}
+
+/* register end */
+
 @media screen and (max-width:1860px) {
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
         height: 460px;

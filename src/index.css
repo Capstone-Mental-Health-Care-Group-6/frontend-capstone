@@ -69,7 +69,7 @@ nav .navbar-collapse button {
 .navbarbgActive {
     background: rgba(211, 202, 202, 0.3);
     backdrop-filter: blur(10px);
-    padding: 10px 90px !important;
+    padding: 10px 0px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,4 +77,13 @@ nav .navbar-collapse button {
     transition: 0.4s;
     width: 100%;
     border: none;
+}
+
+@media screen and (max-width:992px) {
+    nav {
+        background: rgba(211, 202, 202, 0.3);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        padding: 10px 0px !important;
+    }
 }
