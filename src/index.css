@@ -79,14 +79,7 @@ nav .navbar-collapse button {
     border: none;
 }
 
-.menu {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    padding: 0;
-}
-
+/* navbar button style */
 .line {
     fill: none;
     stroke: black;
@@ -127,6 +120,8 @@ nav .navbar-collapse button {
     stroke-dashoffset: -134;
     stroke-width: 6;
 }
+
+/* navbar button style */
 
 
 @media screen and (max-width:992px) {
