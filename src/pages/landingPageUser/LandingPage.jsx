@@ -154,7 +154,7 @@ function LandingPage() {
                     <h5>Seperti yang lain, Kamu juga Berhak Bahagia</h5>
                 </div>
                 <div className="row mt-5">
-                    <div className="col">
+                    <div className="col d-flex justify-content-center">
                         <img src={register} alt="" />
                     </div>
                     <div className="col">
