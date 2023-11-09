@@ -26,10 +26,15 @@ import client1 from './src/assets/client1.svg'
 import quote from './src/assets/Quote.svg'
 import arrowRight from './src/assets/Arrow-Right.svg'
 import register from './src/assets/register.svg'
+import vidio from './src/assets/vidio.svg'
+import shopie from './src/assets/Shopee.svg'
+import alterra from './src/assets/Alterra.svg'
+import garuda from './src/assets/Garuda_Indonesia_Logo.svg'
+
 
 
 export {
     logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
     , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy, star, client1, quote, arrowRight,
-    register
+    register, vidio, shopie, alterra, garuda
 }

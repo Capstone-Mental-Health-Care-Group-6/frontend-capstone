@@ -247,6 +247,28 @@
 
 /* register end */
 
+/* sponsor */
+#sponsors {
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sponsors .text-center {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 18px;
+    background-color: #004280;
+}
+
+.sponsors .sponsor-content {
+    padding: 6px 90px 0px 90px;
+    min-height: 20vh;
+    background-color: #CCE7FF;
+}
+
+/* sponsor end*/
+
 @media screen and (max-width:1860px) {
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
         height: 460px;

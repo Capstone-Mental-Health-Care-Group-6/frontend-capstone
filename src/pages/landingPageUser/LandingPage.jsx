@@ -6,7 +6,7 @@ import { arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, fl
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { services } from '../../components/DataComponent/dataComponents'
 import { conselorsButton } from '../../components/DataComponent/dataComponents'
-import { conselors } from '../../components/DataComponent/dataComponents'
+import { conselors, sponsors } from '../../components/DataComponent/dataComponents'
 import { Splide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import SplideList from '../../components/Fragment/SplideList'
@@ -69,7 +69,7 @@ function LandingPage() {
                 <div className="conselors-content ">
                     <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
                     <p className='text-center'>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
-                    <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 d-n g-3 ">
+                    <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 d-n g-3 align-items-center ">
 
                         {conselorsButton.map((conselorButton, index) => (
                             <ButtonConselor key={index} img={conselorButton.image} text={conselorButton.text} />
@@ -152,7 +152,7 @@ function LandingPage() {
                     <h1>Capai Bahagiamu Sekarang</h1>
                     <h5>Seperti yang lain, Kamu juga Berhak Bahagia</h5>
                 </div>
-                <div className="row mt-5">
+                <div className="row mt-5 d-flex align-items-center row-cols-lg-2 row-cols-1">
                     <div className="col d-flex justify-content-center">
                         <img src={register} alt="" />
                     </div>
@@ -194,6 +194,28 @@ function LandingPage() {
                     </div>
                 </div>
             </section>
+
+            <section className='sponsors' id='sponsors' >
+                <div className="text-center">
+                    <h3>Telah Dipercaya oleh Berbagai Industri</h3>
+                </div>
+                <div className="sponsor-content d-grid align-items-center">
+                    <div className="row row-cols-md-4 row-col-2 d-flex justify-content-center">
+                        {sponsors.map((sponsor, index) => (
+                            <div className="col d-flex justify-content-center" key={index}>
+                                <img src={sponsor.image} />
+                            </div>
+                        ))}
+
+                    </div>
+                </div>
+            </section>
+
+            <section className='footer' id='footer' >
+
+            </section>
+
+
 
         </AuthLayout >
     )

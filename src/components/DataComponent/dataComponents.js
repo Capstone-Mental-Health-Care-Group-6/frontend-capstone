@@ -1,4 +1,7 @@
-import { book, businesCentre, chat, doctor1, doctor2, doctor3, flame, houseFill, love, pending, periority, person, phone, repeat, vidioCall } from "../../../image"
+import {
+    book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, vidio, garuda, shopie, alterra
+} from "../../../image"
 
 
 export const services = [
@@ -90,5 +93,20 @@ export const conselors = [
         name: 'Maria Mango, S. Psi.',
         specialist: 'Psikolog | Spesialis Menejemen Stress dan Emosi',
         image: doctor3
+    },
+]
+
+export const sponsors = [
+    {
+        image: alterra
+    },
+    {
+        image: vidio
+    },
+    {
+        image: garuda
+    },
+    {
+        image: shopie
     },
 ]
