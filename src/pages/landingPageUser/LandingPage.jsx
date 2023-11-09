@@ -13,7 +13,7 @@ import SplideList from '../../components/Fragment/SplideList'
 function LandingPage() {
     return (
         <AuthLayout>
-            <div className='home' id='home'>
+            <section className='home' id='home'>
                 <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
                     <div className="col d-grid ">
                         <h1>Apakah Anda <br />
@@ -26,9 +26,9 @@ function LandingPage() {
                         <img src={mentalHealthAmico} alt="" />
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="daftar-sekarang" id='daftar-sekarang'>
+            <section className="daftar-sekarang" id='daftar-sekarang'>
                 <div className="row ">
                     <div className="col d-grid justify-content-center">
                         <img src={youngHappy} alt="" />
@@ -41,12 +41,12 @@ function LandingPage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
 
 
 
-            <div className="services " id='services'>
+            <section className="services " id='services'>
                 <div className='text-center' >
                     <h1>Ruang Aman & Nyaman untuk Ceritakan Masalahmu</h1>
                     <p>Beragam pilihan ruang aman sesuai kenyamanan dan kebutuhanmu : </p>
@@ -59,9 +59,9 @@ function LandingPage() {
                     ))}
 
                 </div>
-            </div>
+            </section>
 
-            <div className="conselors" id='conselors'>
+            <section className="conselors" id='conselors'>
                 <div className="conselors-content ">
                     <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
                     <p className='text-center'>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
@@ -112,9 +112,9 @@ function LandingPage() {
                         </Splide>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="testimonies" id='testimonies'>
+            <section className="testimonies" id='testimonies'>
                 <div className="row justify-content-center row-cols-lg-2 row-cols-1">
                     <div className="col col-lg-4 d-grid justify-content-center">
                         <div className="profile">
@@ -145,9 +145,9 @@ function LandingPage() {
                     </div>
                 </div>
 
-            </div>
+            </section>
 
-            <div className="register" id='register'>
+            <section className="register" id='register'>
                 <div className="text-center">
                     <h1>Capai Bahagiamu Sekarang</h1>
                     <h5>Seperti yang lain, Kamu juga Berhak Bahagia</h5>
@@ -221,7 +221,7 @@ function LandingPage() {
                         </form>
                     </div>
                 </div>
-            </div>
+            </section>
 
         </AuthLayout >
     )
