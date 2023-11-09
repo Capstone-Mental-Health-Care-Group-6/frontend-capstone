@@ -14,6 +14,7 @@ import Input from '../../components/Elements/Input'
 
 
 function LandingPage() {
+    const stars = [{ star }, { star }, { star }, { star }, { star },];
     return (
         <AuthLayout>
             <section className='home' id='home'>
@@ -118,13 +119,14 @@ function LandingPage() {
                         <div className="profile">
                             <img src={client1} alt="" />
                             <p className='text-center mt-2' >K.A, 25 Tahun</p>
-                            <div className="d-flex justify-content-center gap-1">
-                                <img src={star} alt="" />
-                                <img src={star} alt="" />
-                                <img src={star} alt="" />
-                                <img src={star} alt="" />
-                                <img src={star} alt="" />
+
+                            <div className="d-flex justify-content-center gap-1" >
+                                {stars.map((itemStar, index) => (
+                                    <img src={itemStar.star} key={index} />
+                                ))}
                             </div>
+
+
                         </div>
                     </div>
                     <div className=" col col-lg-8  d-grid justify-content-center align-items-center">
@@ -168,13 +170,14 @@ function LandingPage() {
                                         Conselor
                                     </label>
                                     <div className="input-group mb-3">
-                                        <select className="form-select" aria-label="Example select with button addon">
-                                            <option selected>Choose...</option>
+                                        <select className="form-select" aria-label="Example select with button addon" defaultValue="none">
+                                            <option value="none">Choose...</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
+
                                 </div>
                             </div>
 
