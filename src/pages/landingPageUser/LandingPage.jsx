@@ -2,12 +2,13 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { arrowRight, book, businesCentre, chat, client1, doctor1, doctor2, doctor3, fakeimageregister, flame, houseFill, love, mentalHealthAmico, pending, periority, person, phone, quote, repeat, star, vidioCall, youngHappy } from '../../../image'
+import { arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, quote, register, repeat, star, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { services } from '../../components/dummyData'
 import { Splide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import SplideList from '../../components/Fragment/SplideList'
+import Input from '../../components/Elements/Input'
 
 
 function LandingPage() {
@@ -154,52 +155,23 @@ function LandingPage() {
                 </div>
                 <div className="row mt-5">
                     <div className="col">
-                        <img src={fakeimageregister} alt="" />
+                        <img src={register} alt="" />
                     </div>
                     <div className="col">
                         <form>
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">
-                                    Nama
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    name='name'
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="noPhone" className="form-label">
-                                    No. Telepon
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="noPhone"
-                                    name='noPhone'
-                                />
-                            </div>
+                            <Input title={'Nama'} name={'name'} type={'text'} />
+                            <Input title={'No. Telepon'} name={'noPhone'} type={'number'} />
+
                             <div className="row">
                                 <div className="col">
-                                    <div className="mb-3">
-                                        <label htmlFor="datepicker" className="form-label">
-                                            Date
-                                        </label>
-                                        <input
-                                            type="date"
-                                            className="form-control datepicker"
-                                            id="datepicker"
-                                            name='datepicker'
-                                        />
-                                    </div >
+                                    <Input title={' Date'} name={'date'} type={'date'} />
                                 </div>
                                 <div className="col">
                                     <label className="form-label">
                                         Conselor
                                     </label>
-                                    <div class="input-group mb-3">
-                                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                    <div className="input-group mb-3">
+                                        <select className="form-select" aria-label="Example select with button addon">
                                             <option selected>Choose...</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -209,11 +181,11 @@ function LandingPage() {
                                 </div>
                             </div>
 
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="">
                                     Message
                                 </label>
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                <textarea className="form-control" aria-label="With textarea"></textarea>
                             </div>
                             <button type="submit" className="btn btn-primary w-100">
                                 Buat Janji Temu

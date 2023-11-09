@@ -25,11 +25,11 @@ import star from './src/assets/star1.svg'
 import client1 from './src/assets/client1.svg'
 import quote from './src/assets/Quote.svg'
 import arrowRight from './src/assets/Arrow-Right.svg'
-import fakeimageregister from './src/assets/registerimagefake.png'
+import register from './src/assets/register.svg'
 
 
 export {
     logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
     , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy, star, client1, quote, arrowRight,
-    fakeimageregister
+    register
 }

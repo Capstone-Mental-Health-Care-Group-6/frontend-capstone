@@ -5,7 +5,7 @@ function Navbar({ children }) {
     const [navbarBg, setnavbarBg] = useState(false)
 
     const changeBackground = () => {
-        if (window.scrollY >= 10) {
+        if (window.scrollY >= 80) {
             setnavbarBg(true)
         } else {
             setnavbarBg(false)
