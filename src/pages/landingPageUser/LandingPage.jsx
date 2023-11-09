@@ -4,7 +4,8 @@ import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
 import { arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, quote, register, repeat, star, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
-import { services } from '../../components/dummyData'
+import { services } from '../../components/DataComponent/dataComponents'
+import { conselorsButton } from '../../components/DataComponent/dataComponents'
 import { Splide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import SplideList from '../../components/Fragment/SplideList'
@@ -67,16 +68,11 @@ function LandingPage() {
                     <h5 className='text-center' >Lebih Kenal dengan Psikolog dan Konselor EmpathiCare</h5>
                     <p className='text-center'>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
                     <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 d-n g-3 ">
-                        <ButtonConselor img={flame} text={'Kendali Emosi'} />
-                        <ButtonConselor img={person} text={'Kesepian'} />
-                        <ButtonConselor img={periority} text={'Kecemasan '} />
-                        <ButtonConselor img={businesCentre} text={'Pekerjaan'} />
-                        <ButtonConselor img={book} text={'Pendidikan'} />
-                        <ButtonConselor img={houseFill} text={'Keluarga'} />
-                        <ButtonConselor img={love} text={'Percintaan'} />
-                        <ButtonConselor img={person} text={'Social'} />
-                        <ButtonConselor img={repeat} text={'Kecanduan'} />
-                        <ButtonConselor img={pending} text={'Lainnya'} />
+
+                        {conselorsButton.map((conselorButton) => (
+                            <ButtonConselor img={conselorButton.image} text={conselorButton.text} />
+                        ))}
+
                     </div>
 
 
