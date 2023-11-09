@@ -31,7 +31,7 @@ function LandingPage() {
 
             <section className="daftar-sekarang" id='daftar-sekarang'>
                 <div className="row ">
-                    <div className="col d-grid justify-content-center">
+                    <div className="col d-grid justify-content-center">z
                         <img src={youngHappy} alt="" />
                     </div>
                     <div className="col d-grid align-items-center">
