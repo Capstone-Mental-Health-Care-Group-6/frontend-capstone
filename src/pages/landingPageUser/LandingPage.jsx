@@ -6,6 +6,7 @@ import { arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, fl
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { services } from '../../components/DataComponent/dataComponents'
 import { conselorsButton } from '../../components/DataComponent/dataComponents'
+import { conselors } from '../../components/DataComponent/dataComponents'
 import { Splide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import SplideList from '../../components/Fragment/SplideList'
@@ -69,8 +70,8 @@ function LandingPage() {
                     <p className='text-center'>Semua Psikolog dan Konselor terbaik EmpathiCare telah berlisensi dan diakui oleh HIMPSI. Mereka siap mendengarkan dan mengatasi setiap masalah seputar : </p>
                     <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-3 d-n g-3 ">
 
-                        {conselorsButton.map((conselorButton) => (
-                            <ButtonConselor img={conselorButton.image} text={conselorButton.text} />
+                        {conselorsButton.map((conselorButton, index) => (
+                            <ButtonConselor key={index} img={conselorButton.image} text={conselorButton.text} />
                         ))}
 
                     </div>
@@ -102,9 +103,9 @@ function LandingPage() {
                                 }
                             }
                         }}>
-                            <SplideList name={'Charlie Philips, M.Psi.'} specialist={'Psikolog Klinis | Spesialis Keluarga'} img={doctor1} />
-                            <SplideList name={'Miracle Culhane, S.Psi.'} specialist={'Konselor | Spesialis Hubungan Interpersonal'} img={doctor2} />
-                            <SplideList name={'Maria Mango, S. Psi.'} specialist={'Psikolog | Spesialis Menejemen Stress dan Emosi'} img={doctor3} />
+                            {conselors.map((conselor, index) => (
+                                <SplideList key={index} name={conselor.name} specialist={conselor.specialist} img={conselor.image} />
+                            ))}
 
                         </Splide>
                     </div>

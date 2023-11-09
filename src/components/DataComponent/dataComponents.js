@@ -1,4 +1,4 @@
-import { book, businesCentre, chat, flame, houseFill, love, pending, periority, person, phone, repeat, vidioCall } from "../../../image"
+import { book, businesCentre, chat, doctor1, doctor2, doctor3, flame, houseFill, love, pending, periority, person, phone, repeat, vidioCall } from "../../../image"
 
 
 export const services = [
@@ -75,3 +75,20 @@ export const conselorsButton = [
     },
 ]
 
+export const conselors = [
+    {
+        name: 'Charlie Philips, M.Psi.',
+        specialist: 'Psikolog Klinis | Spesialis Keluarga',
+        image: doctor1
+    },
+    {
+        name: 'Miracle Culhane, S.Psi.',
+        specialist: 'Konselor | Spesialis Hubungan Interpersonal',
+        image: doctor2
+    },
+    {
+        name: 'Maria Mango, S. Psi.',
+        specialist: 'Psikolog | Spesialis Menejemen Stress dan Emosi',
+        image: doctor3
+    },
+]
