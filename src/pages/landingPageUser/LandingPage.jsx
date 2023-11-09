@@ -213,34 +213,43 @@ function LandingPage() {
             </section>
 
             <section className='footer' id='footer' >
-                <div className="container p-5">
-                    <div className="row d-flex justify-content-between ">
-                        <div className="col col-lg-2 col-12 mb-lg-0 mb-4 ">
+                <div className="footer-content p-5">
+                    <div className="row  row-cols-lg-4 row-cols-md-2 row-cols-1 d-flex justify-content-between ">
+                        <div className="col d-grid justify-content-md-center mx-auto mb-4 ">
                             <img className=" empathiCarefooter mb-2 me-2" src={logoEmpathiCare} alt="" />
-                            <div className="d-grid mt-4">
+                            <div className="d-grid justify-content-md-center mt-4">
                                 <img className="mb-2 me-2" src={playstore} alt="" />
                                 <img className="mb-2 me-2" src={appstore} alt="" />
                             </div>
                         </div>
 
-                        <div className="col d-flex flex-column col-lg-2 col-12 mb-lg-0 mb-4 ">
-                            <h5 className="fw-bold">Layanan Kami</h5>
-                            <FooterList title={'Konseling'} />
+                        <div className="col d-flex flex-column align-items-md-center  ">
+                            <div className="text-start">
+                                <h5 className="fw-bold">Layanan Kami</h5>
+                                <FooterList title={'Konseling'} />
+                            </div>
+
 
                         </div>
 
-                        <div className="col d-flex flex-column col-lg-2 col-12">
-                            <h5 className="fw-bold  ">Tentang Kami</h5>
-                            {tentangKami.map((item, index) => (
-                                <FooterList key={index} title={item.title} />
-                            ))}
+                        <div className="col d-flex flex-column align-items-md-center ">
+                            <div className="text-start">
+                                <h5 className="fw-bold  ">Tentang Kami</h5>
+                                {tentangKami.map((item, index) => (
+                                    <FooterList key={index} title={item.title} />
+                                ))}
+                            </div>
+
                         </div>
 
-                        <div className="col d-flex flex-column col-lg-2 col-12">
-                            <h5 className="fw-bold  ">Lainnya</h5>
-                            {lainnyaFooter.map((item, index) => (
-                                <FooterList key={index} title={item.title} />
-                            ))}
+                        <div className="col d-flex flex-column align-items-md-center ">
+                            <div className="text-start">
+                                <h5 className="fw-bold  ">Lainnya</h5>
+                                {lainnyaFooter.map((item, index) => (
+                                    <FooterList key={index} title={item.title} />
+                                ))}
+                            </div>
+
                         </div>
                     </div>
                 </div>
