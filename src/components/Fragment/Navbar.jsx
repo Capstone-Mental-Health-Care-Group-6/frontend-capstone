@@ -24,9 +24,9 @@ function Navbar({ children }) {
             <nav className={`navbar navbar-expand-lg position-fixed ${navbarBg ? 'navbarbgActive' : ''}`}>
                 <div className="container-fluid">
                     <div className="d-flex align-items-center">
-                        <a className="navbar-brand" href="#"><img src={logoEmpathiCare} alt="" /></a>
+                        <a className="navbar-brand logoEmpathiCare" href="#"><img src={logoEmpathiCare} alt="" /></a>
                         <hr />
-                        <span>
+                        <span className='text-navbar'>
                             Diawasi <br /> Oleh
                         </span>
                         <a className="navbar-brand kemenkes ms-2" href="#"><img src={logoKemenkes} alt="" /></a>

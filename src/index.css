@@ -149,4 +149,13 @@ nav .navbar-collapse .navbar-nav .nav-item a.active::after {
     nav .container-fluid .d-flex .kemenkes img {
         width: 60px;
     }
+
+    nav .container-fluid .d-flex .logoEmpathiCare img {
+        width: 90px;
+    }
+
+    nav .container-fluid .d-flex .text-navbar {
+        font-size: 9px;
+        line-height: 11px;
+    }
 }
