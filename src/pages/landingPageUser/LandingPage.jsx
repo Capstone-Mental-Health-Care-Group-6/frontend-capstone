@@ -2,15 +2,16 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, flame, houseFill, love, mentalHealthAmico, pending, periority, person, quote, register, repeat, star, youngHappy } from '../../../image'
+import { appstore, arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, flame, houseFill, logoEmpathiCare, love, mentalHealthAmico, pending, periority, person, playstore, quote, register, repeat, star, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { services } from '../../components/DataComponent/dataComponents'
 import { conselorsButton } from '../../components/DataComponent/dataComponents'
-import { conselors, sponsors } from '../../components/DataComponent/dataComponents'
+import { conselors, sponsors, tentangKami, lainnyaFooter } from '../../components/DataComponent/dataComponents'
 import { Splide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import SplideList from '../../components/Fragment/SplideList'
 import Input from '../../components/Elements/Input'
+import FooterList from '../../components/Elements/FooterList'
 
 
 function LandingPage() {
@@ -212,7 +213,37 @@ function LandingPage() {
             </section>
 
             <section className='footer' id='footer' >
+                <div className="container p-5">
+                    <div className="row d-flex justify-content-between ">
+                        <div className="col col-lg-2 col-12 mb-lg-0 mb-4 ">
+                            <img className=" empathiCarefooter mb-2 me-2" src={logoEmpathiCare} alt="" />
+                            <div className="d-grid mt-4">
+                                <img className="mb-2 me-2" src={playstore} alt="" />
+                                <img className="mb-2 me-2" src={appstore} alt="" />
+                            </div>
+                        </div>
 
+                        <div className="col d-flex flex-column col-lg-2 col-12 mb-lg-0 mb-4 ">
+                            <h5 className="fw-bold">Layanan Kami</h5>
+                            <FooterList title={'Konseling'} />
+
+                        </div>
+
+                        <div className="col d-flex flex-column col-lg-2 col-12">
+                            <h5 className="fw-bold  ">Tentang Kami</h5>
+                            {tentangKami.map((item, index) => (
+                                <FooterList key={index} title={item.title} />
+                            ))}
+                        </div>
+
+                        <div className="col d-flex flex-column col-lg-2 col-12">
+                            <h5 className="fw-bold  ">Lainnya</h5>
+                            {lainnyaFooter.map((item, index) => (
+                                <FooterList key={index} title={item.title} />
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </section>
 
 

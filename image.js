@@ -30,11 +30,13 @@ import vidio from './src/assets/vidio.svg'
 import shopie from './src/assets/Shopee.svg'
 import alterra from './src/assets/Alterra.svg'
 import garuda from './src/assets/Garuda_Indonesia_Logo.svg'
+import playstore from './src/assets/googleplay.svg'
+import appstore from './src/assets/appstore.svg'
 
 
 
 export {
     logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
     , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy, star, client1, quote, arrowRight,
-    register, vidio, shopie, alterra, garuda
+    register, vidio, shopie, alterra, garuda, playstore, appstore
 }

@@ -110,3 +110,33 @@ export const sponsors = [
         image: shopie
     },
 ]
+
+export const tentangKami = [
+    {
+        title: 'Blog'
+    },
+    {
+        title: 'Tentang Kami'
+    },
+    {
+        title: 'Kontak'
+    },
+    {
+        title: 'Gabung Sebagai Konselor'
+    },
+]
+
+export const lainnyaFooter = [
+    {
+        title: 'Harga Konseling'
+    },
+    {
+        title: 'Kebjikan Privasi '
+    },
+    {
+        title: 'Syarat dan Ketentuan '
+    },
+    {
+        title: 'FAQ '
+    },
+]

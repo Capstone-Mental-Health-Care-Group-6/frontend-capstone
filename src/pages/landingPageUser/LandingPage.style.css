@@ -269,6 +269,26 @@
 
 /* sponsor end*/
 
+/* footer */
+#footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer .container .col .empathiCarefooter {
+    width: 200px;
+}
+
+.footer .container .col h5 {
+    color: #4B4B4B;
+}
+
+.footer .container .col a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+/* footer end*/
+
 @media screen and (max-width:1860px) {
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
         height: 460px;
