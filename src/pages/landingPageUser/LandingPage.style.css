@@ -4,6 +4,7 @@
     background-image: url('/src/assets/Bg-Hero-Section.svg');
     background-position: center;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .home .row {
@@ -51,18 +52,24 @@
     width: 500px;
 }
 
-.daftar-sekarang .row .col .text-daftar h1 {
+
+
+.daftar-sekarang .row .col:nth-child(2) h1 {
     color: #55AEFF;
     font-size: 38px;
     font-weight: 700;
 }
 
-.daftar-sekarang .row .col .text-daftar p {
+.daftar-sekarang .row .col:nth-child(2) p {
     font-size: 18px;
 }
 
-.daftar-sekarang .row .col .text-daftar span {
+.daftar-sekarang .row .col:nth-child(2) span {
     font-weight: 600;
+}
+
+.daftar-sekarang .row .col:nth-child(2) button {
+    width: 40%;
 }
 
 .daftar-sekarang .row .col button {
@@ -390,6 +397,14 @@
         padding: 90px 33px 0px 33px;
     }
 
+    #services .row .col .service-content .text-center h3 {
+        font-size: 18px;
+    }
+
+    #services .row .col .service-content .text-center p {
+        font-size: 15px;
+    }
+
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
         height: 290px;
         width: 190px;
@@ -496,9 +511,34 @@
         padding: 0px 5px 0px 5px;
 
     }
+
+    #home {
+        padding: 90px 30px 0px 30px;
+    }
+
+    #daftar-sekarang {
+        padding: 90px 30px 0px 30px;
+    }
+
+    #services {
+        padding: 0px 5px 0px 5px;
+    }
+
+    #register {
+        padding: 0px 10px 0px 10px;
+    }
+
 }
 
 @media screen and (max-width:726px) {
+    #services .text-center h1 {
+        font-size: 27px;
+    }
+
+    #services .text-center p {
+        font-size: 17px;
+    }
+
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
         height: 200px;
         width: 130px;
@@ -513,6 +553,13 @@
         font-size: 8px;
 
     }
+
+
+    #sponsors .sponsor-content .row .col img {
+        width: 100px;
+    }
+
+
 }
 
 @media screen and (max-width:676px) {
@@ -527,18 +574,192 @@
     .conselors .conselors-content {
         padding: 0px 5px 0px 5px;
     }
+
+    .daftar-sekarang .row .col:nth-child(1) img {
+        width: 100vw;
+    }
+
+    .home .row .col img {
+        width: 100vw;
+    }
+
+    #services {
+        padding: 0px 5px 0px 5px;
+    }
+
+    #register .row .col img {
+        width: 100vw;
+    }
+
+    #testimonies {
+        padding: 0px 5px 0px 5px;
+    }
+
+    .testimonies .row .col .profile {
+        background-color: #FFFFFF;
+        margin-top: 20px;
+
+    }
+
+    .testimonies .row .col:nth-child(1) {
+        background-color: transparent;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .register .text-center h1 {
+        font-size: 27px;
+    }
+
+    .register .text-center h5 {
+        font-size: 14px;
+    }
+
+    #sponsors .text-center h3 {
+        font-size: 20px;
+
+    }
+
 }
 
 
-/* @media screen and (max-width:600px) {
-
-    nav .container-fluid .d-flex,
-    hr,
-    .kemenkes {
-        display: none;
+@media screen and (max-width:494px) {
+    #home {
+        padding: 90px 5px 0px 5px;
     }
 
-    nav .container-fluid .d-flex span {
-        display: none;
+    .daftar-sekarang .row .col:nth-child(2) h1 {
+        font-size: 26px;
+
     }
-} */
+
+    .daftar-sekarang .row .col:nth-child(2) p {
+        font-size: 16px;
+
+    }
+
+    .daftar-sekarang .row .col:nth-child(2) button {
+        width: 100%;
+    }
+
+    #conselors .conselors-content h5 {
+        font-size: 18px;
+    }
+
+    #conselors .conselors-content p {
+        font-size: 14px;
+    }
+
+    .home .row h1 {
+        font-size: 35px;
+
+    }
+
+    .home .row p {
+        font-size: 12px;
+    }
+
+    .conselors .conselors-content .caraosel-conselor .card-caraosel {
+        height: 80%;
+        width: 70%;
+    }
+
+    .register .text-center h1 {
+        font-size: 23px;
+    }
+
+    #sponsors .sponsor-content {
+        padding: 6px 5px 0px 5px;
+    }
+
+    #sponsors .text-center h3 {
+        font-size: 17px;
+
+    }
+
+    #footer .footer-content {
+        margin-top: 20px;
+        padding: 6px 20px 0px 20px !important;
+    }
+
+    #footer {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width:386px) {
+    #home {
+        padding: 40px 5px 0px 5px;
+    }
+
+    .home .row h1 {
+        font-size: 29px;
+
+    }
+
+    .home .row button {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .daftar-sekarang .row .col:nth-child(2) h1 {
+        font-size: 20px;
+
+    }
+
+    .daftar-sekarang .row .col:nth-child(2) p {
+        font-size: 12px;
+
+    }
+
+    #services .text-center h1 {
+        font-size: 20px;
+    }
+
+    #services .text-center p {
+        font-size: 14px;
+    }
+
+    #services .row .col .service-content .text-center p {
+        font-size: 13px;
+    }
+
+    #conselors .conselors-content h5 {
+        font-size: 20px;
+    }
+
+    #conselors .conselors-content p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:356px) {
+    .conselors .conselors-content .caraosel-conselor .card-caraosel {
+        height: 80%;
+        width: 60%;
+    }
+
+    .testimonies .row .col .respons-client h1 {
+        font-size: 18px;
+    }
+
+    .testimonies .row .col .respons-client p {
+        font-size: 12px;
+    }
+
+    .register .text-center h1 {
+        font-size: 19px;
+    }
+
+    .register .text-center h5 {
+        font-size: 11px;
+    }
+
+    #sponsors .text-center h3 {
+        font-size: 15px;
+
+    }
+}

@@ -145,7 +145,7 @@ nav .navbar-collapse .navbar-nav .nav-item a.active::after {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:406px) {
     nav .container-fluid .d-flex .kemenkes img {
         width: 60px;
     }

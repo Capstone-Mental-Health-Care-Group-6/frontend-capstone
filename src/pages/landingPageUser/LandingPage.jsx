@@ -34,16 +34,14 @@ function LandingPage() {
             </section>
 
             <section className="daftar-sekarang" id='daftar-sekarang'>
-                <div className="row ">
-                    <div className="col d-grid justify-content-center">z
+                <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
+                    <div className="col d-grid justify-content-center">
                         <img src={youngHappy} alt="" />
                     </div>
-                    <div className="col d-grid align-items-center">
-                        <div className="text-daftar">
-                            <h1>Bahagia juga Milikmu</h1>
-                            <p>Daftar <span>Gratis</span>  untuk solusi segala masalahmu. Jadikan kami #TemanMelangkah di perjalanan kesehatan mentalmu!</p>
-                            <button className='btn' >Daftar Sekarang</button>
-                        </div>
+                    <div className="col d-grid align-items-center justify-content-center">
+                        <h1>Bahagia juga Milikmu</h1>
+                        <p>Daftar <span>Gratis</span>  untuk solusi segala masalahmu. Jadikan kami #TemanMelangkah di perjalanan kesehatan mentalmu!</p>
+                        <button className='btn' >Daftar Sekarang</button>
                     </div>
                 </div>
             </section>
@@ -201,7 +199,7 @@ function LandingPage() {
                     <h3>Telah Dipercaya oleh Berbagai Industri</h3>
                 </div>
                 <div className="sponsor-content d-grid align-items-center">
-                    <div className="row row-cols-md-4 row-col-2 d-flex justify-content-center">
+                    <div className="row row-cols-lg-4  row-cols-md-2 row-cols-2 g-4 d-flex justify-content-center">
                         {sponsors.map((sponsor, index) => (
                             <div className="col d-flex justify-content-center" key={index}>
                                 <img src={sponsor.image} />
