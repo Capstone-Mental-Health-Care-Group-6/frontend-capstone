@@ -9,7 +9,7 @@ html {
 
 nav {
     font-family: 'Montserrat', sans-serif;
-    border-bottom: 2px solid #636363;
+    border-bottom: 1px solid #636363;
     width: 90%;
     z-index: 99;
 }
@@ -71,8 +71,7 @@ nav .navbar-collapse button {
 }
 
 .navbarbgActive {
-    background: rgba(211, 202, 202, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: #FFFF;
     padding: 10px 0px !important;
     display: flex;
     justify-content: space-between;
@@ -138,8 +137,7 @@ nav .navbar-collapse .navbar-nav .nav-item a.active::after {
 
 @media screen and (max-width:992px) {
     nav {
-        background: rgba(211, 202, 202, 0.3);
-        backdrop-filter: blur(10px);
+        background-color: #FFFF;
         width: 100%;
         padding: 10px 0px !important;
     }
