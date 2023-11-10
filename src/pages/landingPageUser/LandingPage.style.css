@@ -295,7 +295,22 @@
     color: #4B4B4B;
 }
 
+#company {
+    min-height: 7vh;
+    padding: 6px 5px 0px 50px;
+    background-color: #CCE7FF;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#company p {
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
 /* footer end*/
+
+
 
 @media screen and (max-width:1860px) {
     .conselors .conselors-content .caraosel-conselor .card-caraosel {
@@ -688,6 +703,10 @@
 
     #footer {
         margin-bottom: 30px;
+    }
+
+    #company p {
+        font-size: 12px;
     }
 
 }

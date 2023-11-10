@@ -2,7 +2,7 @@ import React from 'react'
 import AuthLayout from '../../components/Layout/UserLayout'
 import './LandingPage.style.css'
 import ServiceContent from '../../components/Fragment/ServiceContent'
-import { appstore, arrowRight, book, businesCentre, client1, doctor1, doctor2, doctor3, flame, houseFill, logoEmpathiCare, love, mentalHealthAmico, pending, periority, person, playstore, quote, register, repeat, star, youngHappy } from '../../../image'
+import { appstore, arrowRight, client1, logoEmpathiCare, mentalHealthAmico, playstore, quote, register, star, youngHappy } from '../../../image'
 import ButtonConselor from '../../components/Elements/ButtonConselor'
 import { services } from '../../components/DataComponent/dataComponents'
 import { conselorsButton } from '../../components/DataComponent/dataComponents'
@@ -56,7 +56,7 @@ function LandingPage() {
                 </div>
                 <div className="row d-flex justify-content-between justify-content-lg-evenly mb-5 ">
                     {services.map((service, index) => (
-                        <div className="col col-md-3 col-12" key={index}>
+                        <div className="col col-md-12 col-lg-4 col-12" key={index}>
                             <ServiceContent title={service.title} img={service.Image} text={service.text} metode={service.metode} />
                         </div>
                     ))}
@@ -251,10 +251,12 @@ function LandingPage() {
                         </div>
                     </div>
                 </div>
+
             </section>
 
-
-
+            <section className="company  d-flex justify-content-center align-items-center " id='company'>
+                <p>PT. EmpathiCare Psikologi Indonesia | Everyone deserves to be happy</p>
+            </section>
         </AuthLayout >
     )
 }
