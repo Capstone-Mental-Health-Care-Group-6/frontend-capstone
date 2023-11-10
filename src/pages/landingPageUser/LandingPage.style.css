@@ -466,6 +466,10 @@
         padding: 6px 0px 0px 0px;
     }
 
+    nav .container-fluid .navbar-collapse button {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:884px) {
