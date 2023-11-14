@@ -44,7 +44,7 @@ function Navbar({ children }) {
                         <ul className="navbar-nav mx-auto">
                             {children}
                         </ul>
-                        <button className='btn px-4' >Download Sekarang</button>
+                        <button className={`btn px-4 ${navbarBg ? 'bg-primary text-white' : ''}`}>Download Sekarang</button>
                     </div>
                 </div>
             </nav>
