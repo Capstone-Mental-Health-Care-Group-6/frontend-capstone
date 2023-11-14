@@ -34,10 +34,10 @@ function AuthLayout({ children }) {
     return (
         <>
             <Navbar >
-                <SideBarList title={'Home'} href={'home'} className={activeSection === 'daftar-sekarang' | 'home' ? 'active' : ''} />
+                <SideBarList title={'Home'} href={'home'} className={activeSection === 'daftar-sekarang' || activeSection === 'home' ? 'active' : ''} />
                 <SideBarList title={'Services'} href={'services'} className={activeSection === 'services' ? 'active' : ''} />
-                <SideBarList title={'About Us'} href={'conselors'} className={activeSection === 'conselors' ? 'active' : ''} />
-                <SideBarList title={'Register'} href={'register'} className={activeSection === 'register' ? 'active' : ''} />
+                <SideBarList title={'About Us'} href={'conselors'} className={activeSection === 'testimonies' || activeSection === 'conselors' ? 'active' : ''} />
+                <SideBarList title={'Register'} href={'register'} className={activeSection === 'register' || activeSection === 'sponsors' ? 'active' : ''} />
             </Navbar>
 
             <div className="page-content">
