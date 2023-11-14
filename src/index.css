@@ -158,4 +158,9 @@ nav .navbar-collapse .navbar-nav .nav-item a.active::after {
         font-size: 9px;
         line-height: 11px;
     }
+
+
+    nav .container-fluid .align-items-center {
+        height: 40px;
+    }
 }

@@ -30,7 +30,6 @@ function AuthLayout({ children }) {
         };
     }, []);
 
-    console.log(activeSection);
     return (
         <>
             <Navbar >
