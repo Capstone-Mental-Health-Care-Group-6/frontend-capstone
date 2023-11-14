@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react'
 
 
 function AuthLayout({ children }) {
-    const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('home');
 
     useEffect(() => {
         const handleScroll = () => {
