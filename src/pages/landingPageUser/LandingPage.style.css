@@ -295,6 +295,10 @@
     color: #4B4B4B;
 }
 
+.footer .footer-content .col a:hover {
+    font-weight: 600;
+}
+
 #company {
     min-height: 7vh;
     padding: 6px 5px 0px 50px;
