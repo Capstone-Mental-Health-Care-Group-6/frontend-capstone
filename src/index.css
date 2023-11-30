@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+/* navbar */
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #636363;
+  width: 90%;
+  z-index: 99;
+}
+
+nav .d-flex hr {
+  border: none;
+  border-left: 2px solid black;
+  height: 30px;
+  width: 1px;
+}
+
+nav .d-flex span {
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+nav .d-flex hr {
+  border: 1px solid #636363;
+  opacity: 100%;
+}
+
+nav .container-fluid .navbar-collapse .navbar-nav li a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+nav .container-fluid .navbar-collapse .navbar-nav li a:hover,
+nav .container-fluid .navbar-collapse .navbar-nav li a.active {
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a:hover {
+  font-weight: 600;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0085ff;
+  transition: width 0.3s;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+
+nav .navbar-collapse button {
+  border: 1px solid #0085ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0085ff;
+}
+
+.navbarbgActive {
+  background-color: #ffff;
+  padding: 10px 0px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  width: 100%;
+  border: none;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #0085ff;
+}
+
+/* navbar button style */
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* navbar button style */
+
+.btn.scroll-hover:hover {
+  background-color: transparent !important;
+  color: #0085ff !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn.no-scroll-hover:hover {
+  background-color: #0085ff !important;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    background-color: #ffff;
+    width: 100%;
+    padding: 10px 0px !important;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  nav .container-fluid .d-flex .kemenkes img {
+    width: 60px;
+  }
+
+  nav .container-fluid .d-flex .logoEmpathiCare img {
+    width: 90px;
+  }
+
+  nav .container-fluid .d-flex .text-navbar {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  nav .container-fluid .align-items-center {
+    height: 40px;
+  }
+}
