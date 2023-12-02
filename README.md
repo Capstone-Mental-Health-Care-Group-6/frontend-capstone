@@ -1,15 +1,8 @@
-# Untuk menjalankan Landing Page User
+# React + Vite
 
-Persiapkan nodejs:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Pastikan Anda memiliki lingkungan pengembangan JavaScript yang sudah terpasang di komputer Anda. Salah satu pilihan umum adalah menggunakan Node.js dan npm (Node Package Manager). Anda dapat mengunduh dan menginstalnya dari situs resmi Node.js: https://nodejs.org/.
+Currently, two official plugins are available:
 
-
-## Setelah berada dalam direktori proyek, jalankan perintah berikut untuk memulai aplikasi React:
-
-1. npm i
-2. npm run dev
-
-Anda juga dapat menggunakan yarn sebagai alternatif dari npm. Jika Anda lebih suka menggunakan yarn, Anda dapat menggantikan perintah npm di atas dengan perintah yarn.
-
-Sekarang Anda seharusnya dapat melihat dan mengedit aplikasi React Anda di komputer lokal Anda. Jika Anda ingin menambahkan atau mengubah komponen React, cukup lakukan perubahan dalam direktori proyek dan server pengembangan akan memperbarui tampilan aplikasi secara otomatis.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
