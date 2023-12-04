@@ -54,8 +54,28 @@
 }
 
 .daftar-sekarang .row .col img {
-  width: 500px;
+    width: 500px;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
 
 .daftar-sekarang .row .col:nth-child(2) h1 {
   color: #55aeff;
@@ -208,7 +228,8 @@
 }
 
 .testimonies .row .col .profile p {
-  font-weight: 700;
+    font-weight: 700;
+
 }
 
 .testimonies .row .col .respons-client h1 {
@@ -229,6 +250,7 @@
 }
 
 /* testimoni end*/
+
 
 /* register */
 #register {
@@ -263,6 +285,7 @@
 
 /* register end */
 
+
 /* sponsor */
 #sponsors {
   margin-top: 100px;
@@ -281,6 +304,11 @@
   padding: 6px 90px 0px 90px;
   min-height: 20vh;
   background-color: #cce7ff;
+}
+
+.sponsors .sponsor-content img {
+    width: 100px;
+    height: 100px;
 }
 
 /* sponsor end*/
@@ -677,9 +705,16 @@
     padding: 6px 5px 0px 5px;
   }
 
-  #sponsors .text-center h3 {
-    font-size: 17px;
-  }
+    .sponsors .sponsor-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #footer .footer-content {
+        margin-top: 20px;
+        padding: 6px 20px 0px 20px !important;
+    }
+
 
   #footer .footer-content {
     margin-top: 20px;
