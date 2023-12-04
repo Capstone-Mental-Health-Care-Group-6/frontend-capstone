@@ -15,7 +15,11 @@ import {
   youngHappy,
 } from "../../../image";
 import ButtonConselor from "../../components/Elements/ButtonConselor";
-import { services, sponsors2, testimonies } from "../../components/DataComponent/dataComponents";
+import {
+  services,
+  sponsors2,
+  testimonies,
+} from "../../components/DataComponent/dataComponents";
 import { conselorsButton } from "../../components/DataComponent/dataComponents";
 import {
   conselors,
@@ -40,7 +44,6 @@ function LandingPage() {
     typeSpeed: 100,
     deleteSpeed: 80,
   });
-
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -70,7 +73,7 @@ function LandingPage() {
               Temukan solusi terbaik untuk masalah kesehatan mental Anda. Capai
               kesejahteraan dan kebahagiaan yang Anda inginkan bersama kami.
             </p>
-            <button className="btn mt-3">
+            <button className="btn btn-mulaiPerjalnan border border-primary mt-3">
               Mulai Perjalanan Kesehatan Mental Anda
             </button>
           </div>
@@ -80,9 +83,13 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="daftar-sekarang" id="daftar-sekarang" data-aos="fade-up" >
+      <section
+        className="daftar-sekarang"
+        id="daftar-sekarang"
+        data-aos="fade-up"
+      >
         <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
-          <div className="col d-grid justify-content-center" >
+          <div className="col d-grid justify-content-center">
             <img src={youngHappy} alt="" />
           </div>
           <div className="col d-grid align-items-center justify-content-center">
@@ -91,7 +98,9 @@ function LandingPage() {
               Daftar <span>Gratis</span> untuk solusi segala masalahmu. Jadikan
               kami #TemanMelangkah di perjalanan kesehatan mentalmu!
             </p>
-            <button className="btn">Daftar Sekarang</button>
+            <button className="btn btn-daftarSekarang border border-primary fw-semibold">
+              Download Sekarang
+            </button>
           </div>
         </div>
       </section>
@@ -115,7 +124,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="conselors" id="conselors" >
+      <section className="conselors" id="conselors">
         <div className="conselors-content ">
           <h5 className="text-center">
             Lebih Kenal dengan Psikolog dan Konselor EmpathiCare
@@ -181,7 +190,9 @@ function LandingPage() {
           <div className="col col-lg-4 d-grid justify-content-center">
             <div className="profile">
               <img src={testimonies[currentIndex].image} alt="" />
-              <p className="text-center mt-2">{testimonies[currentIndex].age}</p>
+              <p className="text-center mt-2">
+                {testimonies[currentIndex].age}
+              </p>
               <div className="d-flex justify-content-center gap-1">
                 {stars.map((itemStar, index) => (
                   <img src={itemStar.star} key={index} />
@@ -196,15 +207,16 @@ function LandingPage() {
               <p>{testimonies[currentIndex].response}</p>
             </div>
             <div className="button-testimoni w-100">
-              <button className="btn float-end border-0" onClick={handleNextClick}>
+              <button
+                className="btn float-end border-0"
+                onClick={handleNextClick}
+              >
                 Selanjutnya <img src={arrowRight} alt="" />
               </button>
             </div>
           </div>
         </div>
       </section>
-
-
 
       <section className="sponsors" id="sponsors">
         <div className="text-center">
@@ -213,7 +225,10 @@ function LandingPage() {
         <div className="sponsor-content d-grid align-items-center">
           <div className="row  d-flex justify-content-center mt-4 gap-5">
             {sponsors.map((sponsor, index) => (
-              <div className="col col-lg-1 col-md-4  col-4 d-flex justify-content-center" key={index}>
+              <div
+                className="col col-lg-1 col-md-4  col-4 d-flex justify-content-center"
+                key={index}
+              >
                 <img src={sponsor.image} />
               </div>
             ))}
@@ -221,7 +236,10 @@ function LandingPage() {
 
           <div className="row  g-4 d-flex justify-content-center mt-5 mb-4">
             {sponsors2.map((sponsor, index) => (
-              <div className="col col-lg-2 col-sm-6 col-6 d-flex justify-content-center" key={index}>
+              <div
+                className="col col-lg-2 col-sm-6 col-6 d-flex justify-content-center"
+                key={index}
+              >
                 <img src={sponsor.image} />
               </div>
             ))}
