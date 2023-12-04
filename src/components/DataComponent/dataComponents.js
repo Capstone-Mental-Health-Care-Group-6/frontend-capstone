@@ -101,7 +101,7 @@ export const sponsors = [
         image: brand1
     },
     {
-        image: brand7
+        image: brand2
     },
     {
         image: brand3
