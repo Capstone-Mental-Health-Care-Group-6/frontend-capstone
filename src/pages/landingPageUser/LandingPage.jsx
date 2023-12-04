@@ -15,7 +15,7 @@ import {
   youngHappy,
 } from "../../../image";
 import ButtonConselor from "../../components/Elements/ButtonConselor";
-import { services, sponsors2 } from "../../components/DataComponent/dataComponents";
+import { services, sponsors2, testimonies } from "../../components/DataComponent/dataComponents";
 import { conselorsButton } from "../../components/DataComponent/dataComponents";
 import {
   conselors,
@@ -26,9 +26,9 @@ import {
 import { Splide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import SplideList from "../../components/Fragment/SplideList";
-import Input from "../../components/Elements/Input";
 import FooterList from "../../components/Elements/FooterList";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useState } from "react";
 
 function LandingPage() {
   const stars = [{ star }, { star }, { star }, { star }, { star }];
@@ -39,6 +39,15 @@ function LandingPage() {
     typeSpeed: 100,
     deleteSpeed: 80,
   });
+
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonies.length);
+  };
+
+
   return (
     <AuthLayout>
       <section className="home" id="home">
@@ -165,9 +174,8 @@ function LandingPage() {
         <div className="row justify-content-center row-cols-lg-2 row-cols-1">
           <div className="col col-lg-4 d-grid justify-content-center">
             <div className="profile">
-              <img src={client1} alt="" />
-              <p className="text-center mt-2">K.A, 25 Tahun</p>
-
+              <img src={testimonies[currentIndex].image} alt="" />
+              <p className="text-center mt-2">{testimonies[currentIndex].age}</p>
               <div className="d-flex justify-content-center gap-1">
                 {stars.map((itemStar, index) => (
                   <img src={itemStar.star} key={index} />
@@ -175,20 +183,14 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className=" col col-lg-8  d-grid justify-content-center align-items-center">
+          <div className="col col-lg-8  d-grid justify-content-center align-items-center">
             <div className="respons-client">
               <h1>Yang Client Kami Katakan Tentang Kami</h1>
               <img src={quote} alt="" />
-              <p>
-                Beyond my expectationn!! Semua masalah dibuat jadi lebih ringan,
-                dibawakan dengan cara komedi dan tidak terlalu formal jadi enjoy
-                to talk. Setelah bbrp kali Konsul psikolog baru kali ini yang
-                suantai sekali, bener² kayak ngobrol sama temen dan kayak udah
-                akrab lamaaa. God Bless you Kak Cahrlie!! deserve much love!
-              </p>
+              <p>{testimonies[currentIndex].response}</p>
             </div>
             <div className="button-testimoni w-100">
-              <button className="btn float-end border-0">
+              <button className="btn float-end border-0" onClick={handleNextClick}>
                 Selanjutnya <img src={arrowRight} alt="" />
               </button>
             </div>

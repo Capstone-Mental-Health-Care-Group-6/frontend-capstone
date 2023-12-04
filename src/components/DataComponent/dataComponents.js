@@ -174,11 +174,13 @@ export const lainnyaFooter = [
 
 export const testimonies = [
     {
+        id: 1,
         image: client1,
         age: 'K.A, 25 Tahun',
         response: 'Beyond my expectationn!! Semua masalah dibuat jadi lebih ringan,  dibawakan dengan cara komedi dan tidak terlalu formal jadi enjoy to talk.Setelah bbrp kali Konsul psikolog baru kali ini yang  suantai sekali, bener² kayak ngobrol sama temen dan kayak udah   akrab lamaaa.God Bless you Kak Cahrlie!! deserve much love!'
     },
     {
+        id: 2,
         image: client1,
         age: 'N.F, 22 Tahun',
         response: 'Kakaknya ramah dan responsif banget. terima kasih banyak kak udah mau dengerin dan ngertiin aku, dan udah memberikan beberapa opsi solusi jg untuk aku. serta mau mendukung aku untuk berkembang menjadi lebih baik. sehat selalu ya kak!'
