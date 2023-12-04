@@ -1,6 +1,6 @@
 import {
     book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
-    houseFill, love, pending, periority, person, phone, repeat, vidioCall, vidio, garuda, shopie, alterra
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1
 } from "../../../image"
 
 
@@ -98,16 +98,47 @@ export const conselors = [
 
 export const sponsors = [
     {
-        image: alterra
+        image: brand1
     },
     {
-        image: vidio
+        image: brand7
     },
     {
-        image: garuda
+        image: brand3
     },
     {
-        image: shopie
+        image: brand4
+    },
+    {
+        image: brand5
+    },
+    {
+        image: brand6
+    },
+    {
+        image: brand7
+    },
+    {
+        image: brand8
+    },
+]
+
+
+export const sponsors2 = [
+    {
+        image: brand9
+    },
+    {
+        image: brand10
+    },
+    {
+        image: brand11
+    },
+    {
+        image: brand12
+    },
+    {
+        image: brand13
     },
 ]
 
@@ -139,4 +170,19 @@ export const lainnyaFooter = [
     {
         title: 'FAQ '
     },
+]
+
+export const testimonies = [
+    {
+        id: 1,
+        image: client1,
+        age: 'K.A, 25 Tahun',
+        response: 'Beyond my expectationn!! Semua masalah dibuat jadi lebih ringan,  dibawakan dengan cara komedi dan tidak terlalu formal jadi enjoy to talk.Setelah bbrp kali Konsul psikolog baru kali ini yang  suantai sekali, bener² kayak ngobrol sama temen dan kayak udah   akrab lamaaa.God Bless you Kak Cahrlie!! deserve much love!'
+    },
+    {
+        id: 2,
+        image: client1,
+        age: 'N.F, 22 Tahun',
+        response: 'Kakaknya ramah dan responsif banget. terima kasih banyak kak udah mau dengerin dan ngertiin aku, dan udah memberikan beberapa opsi solusi jg untuk aku. serta mau mendukung aku untuk berkembang menjadi lebih baik. sehat selalu ya kak!'
+    }
 ]

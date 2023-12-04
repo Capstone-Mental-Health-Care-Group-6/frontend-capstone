@@ -35,8 +35,7 @@ function AuthLayout({ children }) {
             <Navbar >
                 <SideBarList title={'Home'} href={'home'} className={activeSection === 'daftar-sekarang' || activeSection === 'home' ? 'active' : ''} />
                 <SideBarList title={'Services'} href={'services'} className={activeSection === 'services' ? 'active' : ''} />
-                <SideBarList title={'About Us'} href={'conselors'} className={activeSection === 'testimonies' || activeSection === 'conselors' ? 'active' : ''} />
-                <SideBarList title={'Register'} href={'register'} className={activeSection === 'register' || activeSection === 'sponsors' ? 'active' : ''} />
+                <SideBarList title={'About Us'} href={'conselors'} className={activeSection === 'testimonies' || activeSection === 'conselors' ? 'active' : '' || activeSection === 'sponsors' ? 'active' : ''} />
             </Navbar>
 
             <div className="page-content">

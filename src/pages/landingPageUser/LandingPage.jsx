@@ -15,7 +15,7 @@ import {
   youngHappy,
 } from "../../../image";
 import ButtonConselor from "../../components/Elements/ButtonConselor";
-import { services } from "../../components/DataComponent/dataComponents";
+import { services, sponsors2, testimonies } from "../../components/DataComponent/dataComponents";
 import { conselorsButton } from "../../components/DataComponent/dataComponents";
 import {
   conselors,
@@ -26,9 +26,10 @@ import {
 import { Splide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import SplideList from "../../components/Fragment/SplideList";
-import Input from "../../components/Elements/Input";
 import FooterList from "../../components/Elements/FooterList";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useState, useEffect } from "react";
+import Aos from "aos";
 
 function LandingPage() {
   const stars = [{ star }, { star }, { star }, { star }, { star }];
@@ -39,9 +40,23 @@ function LandingPage() {
     typeSpeed: 100,
     deleteSpeed: 80,
   });
+
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonies.length);
+  };
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <AuthLayout>
-      <section className="home" id="home">
+      <section className="home" id="home" data-aos="fade-up">
         <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
           <div className="col d-grid ">
             <h1>
@@ -65,9 +80,9 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="daftar-sekarang" id="daftar-sekarang">
+      <section className="daftar-sekarang" id="daftar-sekarang" data-aos="fade-up" >
         <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
-          <div className="col d-grid justify-content-center">
+          <div className="col d-grid justify-content-center" >
             <img src={youngHappy} alt="" />
           </div>
           <div className="col d-grid align-items-center justify-content-center">
@@ -102,7 +117,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="conselors" id="conselors">
+      <section className="conselors" id="conselors" >
         <div className="conselors-content ">
           <h5 className="text-center">
             Lebih Kenal dengan Psikolog dan Konselor EmpathiCare
@@ -167,9 +182,8 @@ function LandingPage() {
         <div className="row justify-content-center row-cols-lg-2 row-cols-1">
           <div className="col col-lg-4 d-grid justify-content-center">
             <div className="profile">
-              <img src={client1} alt="" />
-              <p className="text-center mt-2">K.A, 25 Tahun</p>
-
+              <img src={testimonies[currentIndex].image} alt="" />
+              <p className="text-center mt-2">{testimonies[currentIndex].age}</p>
               <div className="d-flex justify-content-center gap-1">
                 {stars.map((itemStar, index) => (
                   <img src={itemStar.star} key={index} />
@@ -177,20 +191,14 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className=" col col-lg-8  d-grid justify-content-center align-items-center">
+          <div className="col col-lg-8  d-grid justify-content-center align-items-center">
             <div className="respons-client">
               <h1>Yang Client Kami Katakan Tentang Kami</h1>
               <img src={quote} alt="" />
-              <p>
-                Beyond my expectationn!! Semua masalah dibuat jadi lebih ringan,
-                dibawakan dengan cara komedi dan tidak terlalu formal jadi enjoy
-                to talk. Setelah bbrp kali Konsul psikolog baru kali ini yang
-                suantai sekali, bener² kayak ngobrol sama temen dan kayak udah
-                akrab lamaaa. God Bless you Kak Cahrlie!! deserve much love!
-              </p>
+              <p>{testimonies[currentIndex].response}</p>
             </div>
             <div className="button-testimoni w-100">
-              <button className="btn float-end">
+              <button className="btn float-end border-0" onClick={handleNextClick}>
                 Selanjutnya <img src={arrowRight} alt="" />
               </button>
             </div>
@@ -198,40 +206,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="register" id="register">
-        <div className="text-center">
-          <h1>Capai Bahagiamu Sekarang</h1>
-          <h5>Seperti yang lain, Kamu juga Berhak Bahagia</h5>
-        </div>
-        <div className="row mt-5 d-flex align-items-center row-cols-lg-2 row-cols-1">
-          <div className="col d-flex justify-content-center">
-            <img src={register} alt="" />
-          </div>
-          <div className="col">
-            <form>
-              <Input title={"Nama"} name={"name"} type={"text"} />
-              <Input title={"No. Telepon"} name={"noPhone"} type={"number"} />
 
-              <div className="row">
-                <div className="col">
-                  <Input title={" Date"} name={"date"} type={"date"} />
-                </div>
-                <div className="col">
-                  <label className="form-label">Conselor</label>
-                  <div className="input-group mb-3">
-                    <select
-                      className="form-select"
-                      aria-label="Example select with button addon"
-                      defaultValue="none"
-                    >
-                      <option value="none">Choose...</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
 
               <div className="mb-3">
                 <label htmlFor="">Message</label>
@@ -256,9 +231,17 @@ function LandingPage() {
           <h3>Telah Dipercaya oleh Berbagai Industri</h3>
         </div>
         <div className="sponsor-content d-grid align-items-center">
-          <div className="row row-cols-lg-4  row-cols-md-2 row-cols-2 g-4 d-flex justify-content-center">
+          <div className="row  d-flex justify-content-center mt-4 gap-5">
             {sponsors.map((sponsor, index) => (
-              <div className="col d-flex justify-content-center" key={index}>
+              <div className="col col-lg-1 col-md-4  col-4 d-flex justify-content-center" key={index}>
+                <img src={sponsor.image} />
+              </div>
+            ))}
+          </div>
+
+          <div className="row  g-4 d-flex justify-content-center mt-5 mb-4">
+            {sponsors2.map((sponsor, index) => (
+              <div className="col col-lg-2 col-sm-6 col-6 d-flex justify-content-center" key={index}>
                 <img src={sponsor.image} />
               </div>
             ))}
