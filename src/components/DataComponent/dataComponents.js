@@ -1,6 +1,6 @@
 import {
     book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
-    houseFill, love, pending, periority, person, phone, repeat, vidioCall, vidio, garuda, shopie, alterra
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11
 } from "../../../image"
 
 
@@ -98,16 +98,47 @@ export const conselors = [
 
 export const sponsors = [
     {
-        image: alterra
+        image: brand1
     },
     {
-        image: vidio
+        image: brand7
     },
     {
-        image: garuda
+        image: brand3
     },
     {
-        image: shopie
+        image: brand4
+    },
+    {
+        image: brand5
+    },
+    {
+        image: brand6
+    },
+    {
+        image: brand7
+    },
+    {
+        image: brand8
+    },
+]
+
+
+export const sponsors2 = [
+    {
+        image: brand9
+    },
+    {
+        image: brand10
+    },
+    {
+        image: brand11
+    },
+    {
+        image: brand12
+    },
+    {
+        image: brand13
     },
 ]
 

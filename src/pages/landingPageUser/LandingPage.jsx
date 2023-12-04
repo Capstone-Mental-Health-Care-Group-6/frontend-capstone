@@ -15,7 +15,7 @@ import {
   youngHappy,
 } from "../../../image";
 import ButtonConselor from "../../components/Elements/ButtonConselor";
-import { services } from "../../components/DataComponent/dataComponents";
+import { services, sponsors2 } from "../../components/DataComponent/dataComponents";
 import { conselorsButton } from "../../components/DataComponent/dataComponents";
 import {
   conselors,
@@ -196,64 +196,24 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="register" id="register">
-        <div className="text-center">
-          <h1>Capai Bahagiamu Sekarang</h1>
-          <h5>Seperti yang lain, Kamu juga Berhak Bahagia</h5>
-        </div>
-        <div className="row mt-5 d-flex align-items-center row-cols-lg-2 row-cols-1">
-          <div className="col d-flex justify-content-center">
-            <img src={register} alt="" />
-          </div>
-          <div className="col">
-            <form>
-              <Input title={"Nama"} name={"name"} type={"text"} />
-              <Input title={"No. Telepon"} name={"noPhone"} type={"number"} />
 
-              <div className="row">
-                <div className="col">
-                  <Input title={" Date"} name={"date"} type={"date"} />
-                </div>
-                <div className="col">
-                  <label className="form-label">Conselor</label>
-                  <div className="input-group mb-3">
-                    <select
-                      className="form-select"
-                      aria-label="Example select with button addon"
-                      defaultValue="none"
-                    >
-                      <option value="none">Choose...</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="">Message</label>
-                <textarea
-                  className="form-control"
-                  aria-label="With textarea"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary w-100">
-                Buat Janji Temu
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
 
       <section className="sponsors" id="sponsors">
         <div className="text-center">
           <h3>Telah Dipercaya oleh Berbagai Industri</h3>
         </div>
         <div className="sponsor-content d-grid align-items-center">
-          <div className="row row-cols-lg-4  row-cols-md-2 row-cols-2 g-4 d-flex justify-content-center">
+          <div className="row  d-flex justify-content-center mt-4 gap-5">
             {sponsors.map((sponsor, index) => (
-              <div className="col d-flex justify-content-center" key={index}>
+              <div className="col col-lg-1 col-md-4  col-4 d-flex justify-content-center" key={index}>
+                <img src={sponsor.image} />
+              </div>
+            ))}
+          </div>
+
+          <div className="row  g-4 d-flex justify-content-center mt-5 mb-4">
+            {sponsors2.map((sponsor, index) => (
+              <div className="col col-lg-2 col-sm-6 col-6 d-flex justify-content-center" key={index}>
                 <img src={sponsor.image} />
               </div>
             ))}

@@ -274,6 +274,11 @@
     background-color: #CCE7FF;
 }
 
+.sponsors .sponsor-content img {
+    width: 100px;
+    height: 100px;
+}
+
 /* sponsor end*/
 
 /* footer */
@@ -699,6 +704,12 @@
         font-size: 17px;
 
     }
+
+    .sponsors .sponsor-content img {
+        width: 80px;
+        height: 80px;
+    }
+
 
     #footer .footer-content {
         margin-top: 20px;
