@@ -1,51 +1,56 @@
 /* home */
 #home {
-    padding: 90px 90px 0px 90px;
-    background-image: url('/src/assets/Bg-Hero-Section.svg');
-    background-position: center;
-    background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+  padding: 90px 90px 0px 90px;
+  background-image: url("/src/assets/Bg-Hero-Section.svg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home .row {
-    min-height: 93vh;
+  min-height: 93vh;
 }
 
 .home .row h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 46px;
-    font-weight: 700;
-    color: #004280;
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #004280;
 }
 
 .home .row p {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #001B33;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #001b33;
 }
 
 .home .row button {
-    background-color: #0085FF;
-    width: 70%;
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFFFFF;
-    border-radius: 20px;
+  background-color: #0085ff;
+  width: 70%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.btn-mulaiPerjalnan:hover {
+  background-color: transparent !important;
+  color: #0085ff !important;
+  transition: all 0.4s ease-in-out;
 }
 
 /* home end */
 
-
 /* daftar sekarang */
 
 #daftar-sekarang {
-    padding: 90px 90px 0px 90px;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(/src/assets/Circle-bg.svg);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat
+  padding: 90px 90px 0px 90px;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/src/assets/Circle-bg.svg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .daftar-sekarang .row .col img {
@@ -71,153 +76,155 @@
 }
 
 
+
 .daftar-sekarang .row .col:nth-child(2) h1 {
-    color: #55AEFF;
-    font-size: 38px;
-    font-weight: 700;
+  color: #55aeff;
+  font-size: 38px;
+  font-weight: 700;
 }
 
 .daftar-sekarang .row .col:nth-child(2) p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .daftar-sekarang .row .col:nth-child(2) span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .daftar-sekarang .row .col:nth-child(2) button {
-    width: 40%;
+  width: 40%;
 }
 
 .daftar-sekarang .row .col button {
-    background-color: #0085FF;
-    color: #FFFFFF;
-    border-radius: 20px;
+  background-color: #0085ff;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.btn-daftarSekarang:hover {
+  background-color: transparent !important;
+  color: #0085ff !important;
+  transition: all 0.4s ease-in-out;
 }
 
 /* daftar sekarang end */
 
 /* services */
 #services {
-    margin-top: 100px;
-    padding: 90px 90px 0px 90px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
-    min-height: 70vh;
-    background-image: url(/src/assets/services-bg1.png);
-    background-position: center;
-    background-size: 100% 70vh;
-    background-repeat: no-repeat;
+  margin-top: 100px;
+  padding: 90px 90px 0px 90px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  min-height: 70vh;
+  background-image: url(/src/assets/services-bg1.png);
+  background-position: center;
+  background-size: 100% 70vh;
+  background-repeat: no-repeat;
 }
 
 .services .text-center h1 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #55AEFF;
+  font-size: 38px;
+  font-weight: 700;
+  color: #55aeff;
 }
 
 .services .text-center p {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .services .row {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .services .service-content img {
-    padding: 30px;
-    width: 90px;
-    height: 90px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/src/assets/Vector.svg);
+  padding: 30px;
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/src/assets/Vector.svg);
 }
 
 .services .service-content .text-center h3 {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .services .service-content .text-center span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* services end */
 
 /* conselors */
 #conselors {
-    padding: 6px 90px 0px 90px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 100px;
-    background-image: url(/src/assets/service-bg2.svg);
-    background-position: bottom left;
-    background-size: 20% 40%;
-    background-repeat: no-repeat;
-
+  padding: 6px 90px 0px 90px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 100px;
+  background-image: url(/src/assets/service-bg2.svg);
+  background-position: bottom left;
+  background-size: 20% 40%;
+  background-repeat: no-repeat;
 }
-
 
 /* .conselors .conselors-content {
     padding: 0px 90px 0px 90px;
 } */
 
 .conselors .conselors-content h5 {
-    font-size: 20px;
-    font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .conselors .conselors-content .btn {
-    border: 2px solid #CACACA;
-    border-radius: 20px;
-    padding: 5px 20px;
-    font-size: 12px;
+  border: 2px solid #cacaca;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 12px;
 }
 
 .conselors .conselors-content .caraosel-conselor button {
-    background-color: #0085FF;
+  background-color: #0085ff;
 }
 
 .conselors .conselors-content .caraosel-conselor .splide__arrow svg {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .conselors .conselors-content button img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .conselors .conselors-content .caraosel-conselor img {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 
 .conselors .conselors-content .caraosel-conselor .card-caraosel {
-    height: 460px;
-    width: 400px;
-    margin: 50px;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 460px;
+  width: 400px;
+  margin: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-
 
 /* conselors end*/
 
-
 /* testimoni */
 #testimonies {
-    min-height: 40vh;
-    background-color: #0059AA;
-    padding: 50px 200px 50px 200px;
-    font-family: 'Montserrat', sans-serif;
+  min-height: 40vh;
+  background-color: #0059aa;
+  padding: 50px 200px 50px 200px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .testimonies .row .col .profile {
-    padding: 30px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
 }
 
 .testimonies .row .col .profile p {
@@ -225,45 +232,78 @@
 
 }
 
-
 .testimonies .row .col .respons-client h1 {
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .testimonies .row .col .respons-client p {
-    margin-top: 5px;
-    color: #FFFFFF;
+  margin-top: 5px;
+  color: #ffffff;
 }
 
 .testimonies .row .col .button-testimoni button {
-    font-size: 17px;
-    font-weight: 400;
-    color: #FFFFFF !important;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff !important;
 }
 
 /* testimoni end*/
 
 
+/* register */
+#register {
+  padding: 6px 90px 0px 90px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 90px;
+}
+
+.register .text-center h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0085ff;
+}
+
+.register .text-center p {
+  font-size: 18px;
+}
+
+.register .row .col form button {
+  border-radius: 20px;
+}
+
+.register .row .col form label {
+  font-weight: 600;
+}
+
+.btn-konsulSekarang:hover {
+  background-color: transparent !important;
+  color: #0085ff !important;
+  transition: all 0.4s ease-in-out;
+}
+
+/* register end */
+
+
 /* sponsor */
 #sponsors {
-    margin-top: 100px;
-    font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sponsors .text-center {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 18px;
-    background-color: #004280;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 18px;
+  background-color: #004280;
 }
 
 .sponsors .sponsor-content {
-    padding: 6px 90px 0px 90px;
-    min-height: 20vh;
-    background-color: #CCE7FF;
+  padding: 6px 90px 0px 90px;
+  min-height: 20vh;
+  background-color: #cce7ff;
 }
 
 .sponsors .sponsor-content img {
@@ -275,521 +315,487 @@
 
 /* footer */
 #footer {
-    padding: 6px 90px 0px 90px;
-    font-family: 'Montserrat', sans-serif;
+  padding: 6px 90px 0px 90px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer .footer-content .col .empathiCarefooter {
-    width: 200px;
+  width: 200px;
 }
 
 .footer .footer-content .col h5 {
-    color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .footer .footer-content .col a {
-    text-decoration: none;
-    color: #4B4B4B;
+  text-decoration: none;
+  color: #4b4b4b;
 }
 
 .footer .footer-content .col a:hover {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #company {
-    min-height: 7vh;
-    padding: 6px 5px 0px 50px;
-    background-color: #CCE7FF;
-    font-family: 'Montserrat', sans-serif !important;
+  min-height: 7vh;
+  padding: 6px 5px 0px 50px;
+  background-color: #cce7ff;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 #company p {
-    font-weight: 700;
-    font-size: 16px;
-
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* footer end*/
 
-
-
-@media screen and (max-width:1860px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 460px;
-        width: 370px;
-    }
+@media screen and (max-width: 1860px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 460px;
+    width: 370px;
+  }
 }
 
-@media screen and (max-width:1606px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 460px;
-        width: 310px;
-    }
+@media screen and (max-width: 1606px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 460px;
+    width: 310px;
+  }
 }
 
-@media screen and (max-width:1424px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 390px;
-        width: 290px;
-    }
+@media screen and (max-width: 1424px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 390px;
+    width: 290px;
+  }
 
-    .testimonies .row .col .respons-client h1 {
-        font-size: 32px
-    }
-
+  .testimonies .row .col .respons-client h1 {
+    font-size: 32px;
+  }
 }
 
-@media screen and (max-width:1328px) {
-    .conselors .conselors-content {
-        padding: 0px 30px 0px 30px;
-    }
+@media screen and (max-width: 1328px) {
+  .conselors .conselors-content {
+    padding: 0px 30px 0px 30px;
+  }
 
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 390px;
-        width: 260px;
-    }
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 390px;
+    width: 260px;
+  }
 
-    #conselors {
-        padding: 0px 30px 0px 30px;
-
-    }
+  #conselors {
+    padding: 0px 30px 0px 30px;
+  }
 }
 
-@media screen and (max-width:1212px) {
-    .home .row button {
-        width: 100%;
-    }
+@media screen and (max-width: 1212px) {
+  .home .row button {
+    width: 100%;
+  }
 
-    #testimonies {
-        padding: 50px 100px 50px 100px;
-    }
+  #testimonies {
+    padding: 50px 100px 50px 100px;
+  }
 
-    .footer .footer-content .col h5 {
-        font-size: 15px;
-    }
+  .footer .footer-content .col h5 {
+    font-size: 15px;
+  }
 
-    .footer .footer-content .col .empathiCarefooter {
-        width: 160px;
-    }
+  .footer .footer-content .col .empathiCarefooter {
+    width: 160px;
+  }
 
-    .footer .footer-content .col a {
-        font-size: 14px;
-    }
+  .footer .footer-content .col a {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width:1148px) {
-    .home .row h1 {
-        font-size: 36px;
-    }
+@media screen and (max-width: 1148px) {
+  .home .row h1 {
+    font-size: 36px;
+  }
 
-    .home .row p {
-        font-size: 16px;
-    }
+  .home .row p {
+    font-size: 16px;
+  }
 
-    .home .row .col img {
-        width: 420px;
-    }
+  .home .row .col img {
+    width: 420px;
+  }
 
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 320px;
-        width: 220px;
-    }
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 320px;
+    width: 220px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center h5 {
-        font-size: 15px;
-    }
+  .caraosel-conselor .card-caraosel .text-center h5 {
+    font-size: 15px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center span {
-        font-size: 11px;
-    }
-
-
-
+  .caraosel-conselor .card-caraosel .text-center span {
+    font-size: 11px;
+  }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
+  #home {
+    padding: 90px 33px 0px 33px;
+  }
 
-    #home {
-        padding: 90px 33px 0px 33px;
-    }
+  #services .row .col .service-content .text-center h3 {
+    font-size: 18px;
+  }
 
-    #services .row .col .service-content .text-center h3 {
-        font-size: 18px;
-    }
+  #services .row .col .service-content .text-center p {
+    font-size: 15px;
+  }
 
-    #services .row .col .service-content .text-center p {
-        font-size: 15px;
-    }
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 290px;
+    width: 190px;
+  }
 
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 290px;
-        width: 190px;
-    }
+  #conselors {
+    padding: 0px 20px 0px 20px;
+  }
 
-    #conselors {
-        padding: 0px 20px 0px 20px;
+  .caraosel-conselor .card-caraosel .text-center h5 {
+    font-size: 12px;
+  }
 
-    }
+  .caraosel-conselor .card-caraosel .text-center span {
+    font-size: 10px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center h5 {
-        font-size: 12px;
-    }
+  .testimonies .row .col .respons-client h1 {
+    font-size: 25px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center span {
-        font-size: 10px;
+  .testimonies .row .col .respons-client p {
+    font-size: 13px;
+  }
 
-    }
+  .testimonies .row .col .button-testimoni button {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff !important;
+  }
 
-    .testimonies .row .col .respons-client h1 {
-        font-size: 25px
-    }
+  .testimonies .row .col .profile {
+    background-color: transparent;
+  }
 
-    .testimonies .row .col .respons-client p {
-        font-size: 13px;
-    }
+  .testimonies .row .col:nth-child(1) {
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
 
-    .testimonies .row .col .button-testimoni button {
-        font-size: 13px;
-        font-weight: 400;
-        color: #FFFFFF !important;
-    }
+  .footer .footer-content .col h5 {
+    font-size: 20px;
+  }
 
-    .testimonies .row .col .profile {
-        background-color: transparent;
+  .footer .footer-content .col .empathiCarefooter {
+    width: 160px;
+  }
 
-    }
+  .footer .footer-content .col a {
+    font-size: 14px;
+  }
 
-    .testimonies .row .col:nth-child(1) {
-        background-color: #FFFFFF;
-        border-radius: 20px;
-        margin-bottom: 20px;
-    }
+  #footer {
+    padding: 6px 0px 0px 0px;
+  }
 
-
-    .footer .footer-content .col h5 {
-        font-size: 20px;
-    }
-
-    .footer .footer-content .col .empathiCarefooter {
-        width: 160px;
-    }
-
-    .footer .footer-content .col a {
-        font-size: 14px;
-    }
-
-    #footer {
-        padding: 6px 0px 0px 0px;
-    }
-
-    nav .container-fluid .navbar-collapse button {
-        width: 100%;
-    }
-
+  nav .container-fluid .navbar-collapse button {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:884px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 260px;
-        width: 180px;
-    }
+@media screen and (max-width: 884px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 260px;
+    width: 180px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center {
-        padding: 5px !important;
-    }
+  .caraosel-conselor .card-caraosel .text-center {
+    padding: 5px !important;
+  }
 }
 
-@media screen and (max-width:852px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 235px;
-        width: 160px;
-        border-radius: 10px;
-    }
+@media screen and (max-width: 852px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 235px;
+    width: 160px;
+    border-radius: 10px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center {
-        padding: 5px !important;
-    }
+  .caraosel-conselor .card-caraosel .text-center {
+    padding: 5px !important;
+  }
 
-    .conselors .conselors-content .caraosel-conselor img {
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-    }
+  .conselors .conselors-content .caraosel-conselor img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:764px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 235px;
-        width: 150px;
-        border-radius: 10px;
-    }
+@media screen and (max-width: 764px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 235px;
+    width: 150px;
+    border-radius: 10px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center {
-        line-height: 10px;
-    }
+  .caraosel-conselor .card-caraosel .text-center {
+    line-height: 10px;
+  }
 
-    #conselors {
-        padding: 0px 5px 0px 5px;
+  #conselors {
+    padding: 0px 5px 0px 5px;
+  }
 
-    }
+  #home {
+    padding: 90px 30px 0px 30px;
+  }
 
-    #home {
-        padding: 90px 30px 0px 30px;
-    }
+  #daftar-sekarang {
+    padding: 90px 30px 0px 30px;
+  }
 
-    #daftar-sekarang {
-        padding: 90px 30px 0px 30px;
-    }
+  #services {
+    padding: 0px 5px 0px 5px;
+  }
 
-    #services {
-        padding: 0px 5px 0px 5px;
-    }
-
-    #register {
-        padding: 0px 10px 0px 10px;
-    }
-
+  #register {
+    padding: 0px 10px 0px 10px;
+  }
 }
 
-@media screen and (max-width:726px) {
-    #services .text-center h1 {
-        font-size: 27px;
-    }
+@media screen and (max-width: 726px) {
+  #services .text-center h1 {
+    font-size: 27px;
+  }
 
-    #services .text-center p {
-        font-size: 17px;
-    }
+  #services .text-center p {
+    font-size: 17px;
+  }
 
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 200px;
-        width: 130px;
-        border-radius: 10px;
-    }
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 200px;
+    width: 130px;
+    border-radius: 10px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center h5 {
-        font-size: 10px;
-    }
+  .caraosel-conselor .card-caraosel .text-center h5 {
+    font-size: 10px;
+  }
 
-    .caraosel-conselor .card-caraosel .text-center span {
-        font-size: 8px;
+  .caraosel-conselor .card-caraosel .text-center span {
+    font-size: 8px;
+  }
 
-    }
-
-
-    #sponsors .sponsor-content .row .col img {
-        width: 100px;
-    }
-
-
+  #sponsors .sponsor-content .row .col img {
+    width: 100px;
+  }
 }
 
-@media screen and (max-width:676px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 200px;
-        width: 120px;
-        border-radius: 10px;
-    }
+@media screen and (max-width: 676px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 200px;
+    width: 120px;
+    border-radius: 10px;
+  }
 }
 
-@media screen and (max-width:576px) {
-    .conselors .conselors-content {
-        padding: 0px 5px 0px 5px;
-    }
+@media screen and (max-width: 576px) {
+  .conselors .conselors-content {
+    padding: 0px 5px 0px 5px;
+  }
 
-    .daftar-sekarang .row .col:nth-child(1) img {
-        width: 100vw;
-    }
+  .daftar-sekarang .row .col:nth-child(1) img {
+    width: 100vw;
+  }
 
-    .home .row .col img {
-        width: 100vw;
-    }
+  .home .row .col img {
+    width: 100vw;
+  }
 
-    #services {
-        padding: 0px 5px 0px 5px;
-    }
+  #services {
+    padding: 0px 5px 0px 5px;
+  }
 
-    #register .row .col img {
-        width: 100vw;
-    }
+  #register .row .col img {
+    width: 100vw;
+  }
 
-    #testimonies {
-        padding: 0px 5px 0px 5px;
-    }
+  #testimonies {
+    padding: 0px 5px 0px 5px;
+  }
 
-    .testimonies .row .col .profile {
-        background-color: #FFFFFF;
-        margin-top: 20px;
+  .testimonies .row .col .profile {
+    background-color: #ffffff;
+    margin-top: 20px;
+  }
 
-    }
+  .testimonies .row .col:nth-child(1) {
+    background-color: transparent;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
 
-    .testimonies .row .col:nth-child(1) {
-        background-color: transparent;
-        border-radius: 20px;
-        margin-bottom: 20px;
-    }
+  .register .text-center h1 {
+    font-size: 27px;
+  }
 
-    .register .text-center h1 {
-        font-size: 27px;
-    }
+  .register .text-center h5 {
+    font-size: 14px;
+  }
 
-    .register .text-center h5 {
-        font-size: 14px;
-    }
-
-    #sponsors .text-center h3 {
-        font-size: 20px;
-
-    }
-
+  #sponsors .text-center h3 {
+    font-size: 20px;
+  }
 }
 
+@media screen and (max-width: 494px) {
+  #home {
+    padding: 90px 5px 0px 5px;
+  }
 
-@media screen and (max-width:494px) {
-    #home {
-        padding: 90px 5px 0px 5px;
-    }
+  .daftar-sekarang .row .col:nth-child(2) h1 {
+    font-size: 26px;
+  }
 
-    .daftar-sekarang .row .col:nth-child(2) h1 {
-        font-size: 26px;
+  .daftar-sekarang .row .col:nth-child(2) p {
+    font-size: 16px;
+  }
 
-    }
+  .daftar-sekarang .row .col:nth-child(2) button {
+    width: 100%;
+  }
 
-    .daftar-sekarang .row .col:nth-child(2) p {
-        font-size: 16px;
+  #conselors .conselors-content h5 {
+    font-size: 18px;
+  }
 
-    }
+  #conselors .conselors-content p {
+    font-size: 14px;
+  }
 
-    .daftar-sekarang .row .col:nth-child(2) button {
-        width: 100%;
-    }
+  .home .row h1 {
+    font-size: 35px;
+  }
 
-    #conselors .conselors-content h5 {
-        font-size: 18px;
-    }
+  .home .row p {
+    font-size: 12px;
+  }
 
-    #conselors .conselors-content p {
-        font-size: 14px;
-    }
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 80%;
+    width: 70%;
+  }
 
-    .home .row h1 {
-        font-size: 35px;
+  .register .text-center h1 {
+    font-size: 23px;
+  }
 
-    }
-
-    .home .row p {
-        font-size: 12px;
-    }
-
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 80%;
-        width: 70%;
-    }
-
-    .register .text-center h1 {
-        font-size: 23px;
-    }
-
-    #sponsors .sponsor-content {
-        padding: 6px 5px 0px 5px;
-    }
-
-    #sponsors .text-center h3 {
-        font-size: 17px;
-
-    }
+  #sponsors .sponsor-content {
+    padding: 6px 5px 0px 5px;
+  }
 
     .sponsors .sponsor-content img {
         width: 80px;
         height: 80px;
     }
 
-
     #footer .footer-content {
         margin-top: 20px;
         padding: 6px 20px 0px 20px !important;
     }
 
-    #footer {
-        margin-bottom: 30px;
-    }
 
-    #company p {
-        font-size: 12px;
-    }
+  #footer .footer-content {
+    margin-top: 20px;
+    padding: 6px 20px 0px 20px !important;
+  }
 
+  #footer {
+    margin-bottom: 30px;
+  }
+
+  #company p {
+    font-size: 12px;
+  }
 }
 
+@media screen and (max-width: 386px) {
+  #home {
+    padding: 40px 5px 0px 5px;
+  }
 
+  .home .row h1 {
+    font-size: 29px;
+  }
 
-@media screen and (max-width:386px) {
-    #home {
-        padding: 40px 5px 0px 5px;
-    }
+  .home .row button {
+    width: 100%;
+    font-size: 12px;
+  }
 
-    .home .row h1 {
-        font-size: 29px;
+  .daftar-sekarang .row .col:nth-child(2) h1 {
+    font-size: 20px;
+  }
 
-    }
+  .daftar-sekarang .row .col:nth-child(2) p {
+    font-size: 12px;
+  }
 
-    .home .row button {
-        width: 100%;
-        font-size: 12px;
-    }
+  #services .text-center h1 {
+    font-size: 20px;
+  }
 
-    .daftar-sekarang .row .col:nth-child(2) h1 {
-        font-size: 20px;
+  #services .text-center p {
+    font-size: 14px;
+  }
 
-    }
+  #services .row .col .service-content .text-center p {
+    font-size: 13px;
+  }
 
-    .daftar-sekarang .row .col:nth-child(2) p {
-        font-size: 12px;
+  #conselors .conselors-content h5 {
+    font-size: 20px;
+  }
 
-    }
-
-    #services .text-center h1 {
-        font-size: 20px;
-    }
-
-    #services .text-center p {
-        font-size: 14px;
-    }
-
-    #services .row .col .service-content .text-center p {
-        font-size: 13px;
-    }
-
-    #conselors .conselors-content h5 {
-        font-size: 20px;
-    }
-
-    #conselors .conselors-content p {
-        font-size: 13px;
-    }
+  #conselors .conselors-content p {
+    font-size: 13px;
+  }
 }
 
-@media screen and (max-width:356px) {
-    .conselors .conselors-content .caraosel-conselor .card-caraosel {
-        height: 80%;
-        width: 60%;
-    }
+@media screen and (max-width: 356px) {
+  .conselors .conselors-content .caraosel-conselor .card-caraosel {
+    height: 80%;
+    width: 60%;
+  }
 
-    .testimonies .row .col .respons-client h1 {
-        font-size: 18px;
-    }
+  .testimonies .row .col .respons-client h1 {
+    font-size: 18px;
+  }
 
-    .testimonies .row .col .respons-client p {
-        font-size: 12px;
-    }
+  .testimonies .row .col .respons-client p {
+    font-size: 12px;
+  }
 
-    .register .text-center h1 {
-        font-size: 19px;
-    }
+  .register .text-center h1 {
+    font-size: 19px;
+  }
 
-    .register .text-center h5 {
-        font-size: 11px;
-    }
+  .register .text-center h5 {
+    font-size: 11px;
+  }
 
-    #sponsors .text-center h3 {
-        font-size: 15px;
-
-    }
+  #sponsors .text-center h3 {
+    font-size: 15px;
+  }
 }

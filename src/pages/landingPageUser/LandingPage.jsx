@@ -70,7 +70,7 @@ function LandingPage() {
               Temukan solusi terbaik untuk masalah kesehatan mental Anda. Capai
               kesejahteraan dan kebahagiaan yang Anda inginkan bersama kami.
             </p>
-            <button className="btn mt-3">
+            <button className="btn border border-primary btn-mulaiPerjalnan mt-3">
               Mulai Perjalanan Kesehatan Mental Anda
             </button>
           </div>
@@ -91,7 +91,9 @@ function LandingPage() {
               Daftar <span>Gratis</span> untuk solusi segala masalahmu. Jadikan
               kami #TemanMelangkah di perjalanan kesehatan mentalmu!
             </p>
-            <button className="btn">Daftar Sekarang</button>
+            <button className="btn border border-primary btn-daftarSekarang">
+              Download Sekarang
+            </button>
           </div>
         </div>
       </section>
@@ -205,6 +207,24 @@ function LandingPage() {
       </section>
 
 
+
+              <div className="mb-3">
+                <label htmlFor="">Message</label>
+                <textarea
+                  className="form-control"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-konsulSekarang border border-primary btn-primary w-100"
+              >
+                Konsul Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <section className="sponsors" id="sponsors">
         <div className="text-center">
