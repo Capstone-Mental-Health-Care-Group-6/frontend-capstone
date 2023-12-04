@@ -2,7 +2,7 @@ import React from 'react'
 
 function ServiceContent({ title, text, img, metode }) {
     return (
-        <div className="service-content d-grid ">
+        <div className="service-content d-grid " data-aos="zoom-in">
             <img className='mx-auto' src={img} alt="" />
             <div className="text-center mt-3">
                 <h3> {title}</h3>

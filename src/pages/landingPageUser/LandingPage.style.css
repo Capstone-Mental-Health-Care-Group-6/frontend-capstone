@@ -50,8 +50,25 @@
 
 .daftar-sekarang .row .col img {
     width: 500px;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
 
 
 .daftar-sekarang .row .col:nth-child(2) h1 {
@@ -228,32 +245,6 @@
 
 /* testimoni end*/
 
-/* register */
-#register {
-    padding: 6px 90px 0px 90px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 90px;
-}
-
-.register .text-center h1 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #0085FF;
-}
-
-.register .text-center p {
-    font-size: 18px;
-}
-
-.register .row .col form button {
-    border-radius: 20px;
-}
-
-.register .row .col form label {
-    font-weight: 600;
-}
-
-/* register end */
 
 /* sponsor */
 #sponsors {

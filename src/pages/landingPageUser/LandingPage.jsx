@@ -28,7 +28,8 @@ import "@splidejs/react-splide/css";
 import SplideList from "../../components/Fragment/SplideList";
 import FooterList from "../../components/Elements/FooterList";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Aos from "aos";
 
 function LandingPage() {
   const stars = [{ star }, { star }, { star }, { star }, { star }];
@@ -47,10 +48,15 @@ function LandingPage() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonies.length);
   };
 
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
 
   return (
     <AuthLayout>
-      <section className="home" id="home">
+      <section className="home" id="home" data-aos="fade-up">
         <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
           <div className="col d-grid ">
             <h1>
@@ -74,9 +80,9 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="daftar-sekarang" id="daftar-sekarang">
+      <section className="daftar-sekarang" id="daftar-sekarang" data-aos="fade-up" >
         <div className="row d-flex align-items-center row-cols-lg-2 row-cols-1">
-          <div className="col d-grid justify-content-center">
+          <div className="col d-grid justify-content-center" >
             <img src={youngHappy} alt="" />
           </div>
           <div className="col d-grid align-items-center justify-content-center">
@@ -109,7 +115,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="conselors" id="conselors">
+      <section className="conselors" id="conselors" >
         <div className="conselors-content ">
           <h5 className="text-center">
             Lebih Kenal dengan Psikolog dan Konselor EmpathiCare
