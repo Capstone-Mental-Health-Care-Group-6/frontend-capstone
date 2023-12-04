@@ -1,6 +1,6 @@
 import {
     book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
-    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1
 } from "../../../image"
 
 
@@ -170,4 +170,17 @@ export const lainnyaFooter = [
     {
         title: 'FAQ '
     },
+]
+
+export const testimonies = [
+    {
+        image: client1,
+        age: 'K.A, 25 Tahun',
+        response: 'Beyond my expectationn!! Semua masalah dibuat jadi lebih ringan,  dibawakan dengan cara komedi dan tidak terlalu formal jadi enjoy to talk.Setelah bbrp kali Konsul psikolog baru kali ini yang  suantai sekali, bener² kayak ngobrol sama temen dan kayak udah   akrab lamaaa.God Bless you Kak Cahrlie!! deserve much love!'
+    },
+    {
+        image: client1,
+        age: 'N.F, 22 Tahun',
+        response: 'Kakaknya ramah dan responsif banget. terima kasih banyak kak udah mau dengerin dan ngertiin aku, dan udah memberikan beberapa opsi solusi jg untuk aku. serta mau mendukung aku untuk berkembang menjadi lebih baik. sehat selalu ya kak!'
+    }
 ]

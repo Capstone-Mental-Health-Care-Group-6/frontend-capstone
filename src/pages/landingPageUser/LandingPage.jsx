@@ -188,7 +188,7 @@ function LandingPage() {
               </p>
             </div>
             <div className="button-testimoni w-100">
-              <button className="btn float-end">
+              <button className="btn float-end border-0">
                 Selanjutnya <img src={arrowRight} alt="" />
               </button>
             </div>
