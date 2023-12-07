@@ -164,14 +164,10 @@
   font-family: "Montserrat", sans-serif;
   padding-bottom: 100px;
   background-image: url(/src/assets/Background-konselor.png);
-  background-position: bottom left;
+  background-position: bottom;
   background-size: 100% 50%;
   background-repeat: no-repeat;
 }
-
-/* .conselors .conselors-content {
-    padding: 0px 90px 0px 90px;
-} */
 
 .conselors .conselors-content h5 {
   font-size: 20px;
@@ -540,6 +536,11 @@
     border-radius: 10px 10px 0px 0px;
     width: 100%;
   }
+
+  #conselors {
+    background-size: 100% 40%;
+  }
+
 }
 
 @media screen and (max-width: 764px) {
@@ -607,6 +608,10 @@
     height: 200px;
     width: 120px;
     border-radius: 10px;
+  }
+
+  #conselors {
+    background-size: 100% 20%;
   }
 }
 
