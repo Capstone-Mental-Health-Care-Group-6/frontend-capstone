@@ -188,9 +188,9 @@ function LandingPage() {
       <section className="testimonies" id="testimonies">
         <div className="row justify-content-center row-cols-lg-2 row-cols-1">
           <div className="col col-lg-4 d-grid justify-content-center">
-            <div className="profile">
-              <img data-aos="fade-up" src={testimonies[currentIndex].image} alt="" />
-              <p data-aos="fade-up" className="text-center mt-2">
+            <div className="profile" data-aos="fade-up">
+              <img src={testimonies[currentIndex].image} alt="" />
+              <p data-aos="zoom-in" className="text-center mt-2">
                 {testimonies[currentIndex].age}
               </p>
               <div className="d-flex justify-content-center gap-1">
