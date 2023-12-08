@@ -20,6 +20,13 @@ import book from './src/assets/text.book.closed.fill.svg'
 import doctor1 from './src/assets/doctor1.svg'
 import doctor2 from './src/assets/doctor2.svg'
 import doctor3 from './src/assets/doctor3.svg'
+import doctor4 from './src/assets/doktor4.svg'
+import doctor5 from './src/assets/doctor5.svg'
+import doctor6 from './src/assets/doctor6.svg'
+import doctor7 from './src/assets/doctor7.svg'
+// import doctor8 from './src/assets/doctor8.svg'
+import doctor9 from './src/assets/doctor9.svg'
+import doctor10 from './src/assets/doctor10.svg'
 import youngHappy from './src/assets/young-happy.svg'
 import star from './src/assets/star1.svg'
 import client1 from './src/assets/client1.svg'
@@ -46,7 +53,7 @@ import man from './src/assets/man.svg'
 
 
 export {
-    man, logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
+    doctor4, man, logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
     , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy, star, client1, quote, arrowRight,
-    register, playstore, appstore, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11
+    register, playstore, appstore, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, doctor5, doctor6, doctor7, doctor9, doctor10
 }

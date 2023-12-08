@@ -169,6 +169,10 @@
   background-repeat: no-repeat;
 }
 
+#conselors .caraosel-conselor .card-caraosel img {
+  background-color: #D6F0FF;
+}
+
 .conselors .conselors-content h5 {
   font-size: 20px;
   font-weight: 700;

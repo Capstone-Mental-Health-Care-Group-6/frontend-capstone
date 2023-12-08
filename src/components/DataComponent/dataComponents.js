@@ -1,6 +1,6 @@
 import {
     book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
-    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1, man
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1, man, doctor4, doctor5, doctor6, doctor7, doctor10
 } from "../../../image"
 
 
@@ -93,6 +93,26 @@ export const conselors = [
         name: 'Maria Mango, S. Psi.',
         specialist: 'Psikolog | Spesialis Menejemen Stress dan Emosi',
         image: doctor3
+    },
+    {
+        name: 'Chance Herwitz, M. Psi.',
+        specialist: 'Psikolog | Spesialis Seksual',
+        image: doctor4
+    },
+    {
+        name: 'Phillip Siphron, S.Psi.',
+        specialist: 'Konselor | Spesialis Kecemasan',
+        image: doctor6
+    },
+    {
+        name: 'Erin Dorwart, M.Psi.',
+        specialist: 'Psikolog Industri & Organisasi | Spesialis Kanker',
+        image: doctor7
+    },
+    {
+        name: 'Marcus Septimus, M.Psi.',
+        specialist: 'Psikolog Industri & Organisasi | Spesialis Pengembangan Diri',
+        image: doctor10
     },
 ]
 
