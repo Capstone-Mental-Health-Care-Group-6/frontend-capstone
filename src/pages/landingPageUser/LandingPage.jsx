@@ -273,7 +273,7 @@ function LandingPage() {
               <div className="text-start">
                 <h5 className="fw-bold  ">Tentang Kami</h5>
                 {tentangKami.map((item, index) => (
-                  <FooterList key={index} title={item.title} />
+                  <FooterList key={index} title={item.title} location={item.link} />
                 ))}
               </div>
             </div>

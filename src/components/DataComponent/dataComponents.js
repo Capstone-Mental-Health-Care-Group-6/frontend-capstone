@@ -173,7 +173,8 @@ export const tentangKami = [
         title: 'Kontak'
     },
     {
-        title: 'Gabung Sebagai Konselor'
+        title: 'Gabung Sebagai Konselor',
+        link: 'https://empathicare-dokter.vercel.app/'
     },
 ]
 
