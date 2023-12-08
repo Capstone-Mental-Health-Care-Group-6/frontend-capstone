@@ -1,6 +1,6 @@
 import {
     book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
-    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1, man
 } from "../../../image"
 
 
@@ -181,7 +181,7 @@ export const testimonies = [
     },
     {
         id: 2,
-        image: client1,
+        image: man,
         age: 'N.F, 22 Tahun',
         response: 'Kakaknya ramah dan responsif banget. terima kasih banyak kak udah mau dengerin dan ngertiin aku, dan udah memberikan beberapa opsi solusi jg untuk aku. serta mau mendukung aku untuk berkembang menjadi lebih baik. sehat selalu ya kak!'
     }

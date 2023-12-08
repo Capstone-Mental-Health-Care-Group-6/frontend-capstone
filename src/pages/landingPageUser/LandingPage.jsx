@@ -53,7 +53,7 @@ function LandingPage() {
 
   useEffect(() => {
     Aos.init({
-      duration: 2000,
+      duration: 1600,
     });
   }, []);
 
@@ -189,8 +189,8 @@ function LandingPage() {
         <div className="row justify-content-center row-cols-lg-2 row-cols-1">
           <div className="col col-lg-4 d-grid justify-content-center">
             <div className="profile">
-              <img src={testimonies[currentIndex].image} alt="" />
-              <p className="text-center mt-2">
+              <img data-aos="fade-up" src={testimonies[currentIndex].image} alt="" />
+              <p data-aos="fade-up" className="text-center mt-2">
                 {testimonies[currentIndex].age}
               </p>
               <div className="d-flex justify-content-center gap-1">
@@ -204,7 +204,7 @@ function LandingPage() {
             <div className="respons-client">
               <h1>Yang Client Kami Katakan Tentang Kami</h1>
               <img src={quote} alt="" />
-              <p>{testimonies[currentIndex].response}</p>
+              <p data-aos="fade-up">{testimonies[currentIndex].response}</p>
             </div>
             <div className="button-testimoni w-100">
               <button

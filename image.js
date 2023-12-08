@@ -41,11 +41,12 @@ import brand10 from './src/assets/brand10.svg'
 import brand11 from './src/assets/brand11.svg'
 import brand12 from './src/assets/brand12.svg'
 import brand13 from './src/assets/brand13.svg'
+import man from './src/assets/man.svg'
 
 
 
 export {
-    logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
+    man, logoEmpathiCare, logoKemenkes, mentalHealthAmico, chat, vector, vidioCall, phone, rectangleRoundedbg, flame, businesCentre, group
     , houseFill, iconMask, love, periority, person, pending, repeat, book, doctor1, doctor2, doctor3, youngHappy, star, client1, quote, arrowRight,
     register, playstore, appstore, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11
 }
