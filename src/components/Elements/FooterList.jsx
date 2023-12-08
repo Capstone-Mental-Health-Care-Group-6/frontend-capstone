@@ -1,8 +1,8 @@
 import React from 'react'
 
-function FooterList({ title }) {
+function FooterList({ title, location = '#' }) {
     return (
-        <a href="">{title} <br /></a>
+        <a href={location}>{title} <br /></a>
     )
 }
 

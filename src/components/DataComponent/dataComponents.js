@@ -1,6 +1,6 @@
 import {
     book, businesCentre, chat, doctor1, doctor2, doctor3, flame,
-    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1
+    houseFill, love, pending, periority, person, phone, repeat, vidioCall, brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand12, brand13, brand11, client1, man, doctor4, doctor5, doctor6, doctor7, doctor10
 } from "../../../image"
 
 
@@ -94,6 +94,26 @@ export const conselors = [
         specialist: 'Psikolog | Spesialis Menejemen Stress dan Emosi',
         image: doctor3
     },
+    {
+        name: 'Chance Herwitz, M. Psi.',
+        specialist: 'Psikolog | Spesialis Seksual',
+        image: doctor4
+    },
+    {
+        name: 'Phillip Siphron, S.Psi.',
+        specialist: 'Konselor | Spesialis Kecemasan',
+        image: doctor6
+    },
+    {
+        name: 'Erin Dorwart, M.Psi.',
+        specialist: 'Psikolog Industri & Organisasi | Spesialis Kanker',
+        image: doctor7
+    },
+    {
+        name: 'Marcus Septimus, M.Psi.',
+        specialist: 'Psikolog Industri & Organisasi | Spesialis Pengembangan Diri',
+        image: doctor10
+    },
 ]
 
 export const sponsors = [
@@ -101,7 +121,7 @@ export const sponsors = [
         image: brand1
     },
     {
-        image: brand7
+        image: brand2
     },
     {
         image: brand3
@@ -153,7 +173,8 @@ export const tentangKami = [
         title: 'Kontak'
     },
     {
-        title: 'Gabung Sebagai Konselor'
+        title: 'Gabung Sebagai Konselor',
+        link: 'https://empathicare-dokter.vercel.app/'
     },
 ]
 
@@ -181,7 +202,7 @@ export const testimonies = [
     },
     {
         id: 2,
-        image: client1,
+        image: man,
         age: 'N.F, 22 Tahun',
         response: 'Kakaknya ramah dan responsif banget. terima kasih banyak kak udah mau dengerin dan ngertiin aku, dan udah memberikan beberapa opsi solusi jg untuk aku. serta mau mendukung aku untuk berkembang menjadi lebih baik. sehat selalu ya kak!'
     }
