@@ -22,9 +22,8 @@ function Navbar({ children }) {
   return (
     <div className="d-flex justify-content-center w-100">
       <nav
-        className={`navbar navbar-expand-lg position-fixed ${
-          navbarBg ? "navbarbgActive" : ""
-        }`}
+        className={`navbar navbar-expand-lg position-fixed ${navbarBg ? "navbarbgActive" : ""
+          }`}
       >
         <div className="container-fluid">
           <div className="d-flex align-items-center">
@@ -66,11 +65,10 @@ function Navbar({ children }) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">{children}</ul>
             <button
-              className={`btn px-4 border border-primary ${
-                navbarBg
+              className={`btn px-4 border border-primary ${navbarBg
                   ? "scroll-hover bg-primary text-white"
                   : "no-scroll-hover"
-              }`}
+                }`}
             >
               Download Sekarang
             </button>
